@@ -1,21 +1,210 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<meta charset="utf-8">
-<title>MAP672 Portfolio Example</title>
-
-<meta name=‘viewport’ content=‘initial-scale=1,maximum-scale=1,user-scalable=no’ />
-
-<style>
-    
-/* CSS style rules go here! */   
-
-</style>
-</head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Lis Fano Portfolio">
+	<meta name="author" content="Lis Fano">
+	<title>Lis Fano Portfolio</title>
+	<!-- CSS -->
+	<link href="./css/bootstrap.css" rel="stylesheet">
+	<link href="./css/font-awesome.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> </head>
 
 <body>
-
-    <p>Hello World! I’m going to be a portfolio page.</p>
-    
+	<!-- Javascript -->
+	<script src="./js/jquery-2.2.3.min.js"></script>
+	<script src="./js/bootstrap.js"></script>
+	<!-- Navbar -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header"> <a href="#" class="navbar-brand">LIS FANO</a>
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#hamburger-navigation"> <span class="sr-only">Navigation toggle</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+			</div>
+			<div class="collapse navbar-collapse" id="hamburger-navigation">
+				<ul class="nav navbar-nav navbar-right" role="menu">
+					<li><a href="#">Projects</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- Featured Projects -->
+	<div class="container">
+		<hr id="projects"></hr>
+		<div class="row">
+			<div class="col-lg-12">
+				<h1>Featured Projects</h1> </div>
+		</div>
+		<div class="row">
+			<!-- Digital Nomad -->
+			<div class="col-sm-4">
+				<a target='_blank' href="https://lisfano.carto.com/viz/84dde768-34d1-11e6-bdbe-0e674067d321/public_map"> <img class="img-circle img-responsive img-center" src="./images/CG2L.png" alt="A proximity analysis CARTO map"></a>
+				<h3>The Digital Nomad Map</h3>
+				<hr class="hr-sm"></hr>
+				<p>A playful CARTO map that displays the result of a nationwide, ten linear mile proximity analysis between public campgrounds and public libraries. In this analysis a maximum ten-mile linear hub-line feature is included to quickly visualize the nearest campground-to-library relationship.</p>
+				<p style="margin-top:15px;"><b>Languages:</b> JavaScript, HTML, CSS, SQL
+					<br><b>Applications:</b> QGIS, KNIME, CARTO</p> <a type="view" target='_blank' href="https://lisfano.carto.com/viz/84dde768-34d1-11e6-bdbe-0e674067d321/public_map" class="btn btn-default" role="button">View Web Map</a> </div>
+			<!-- Greenhouse Gases -->
+			<div class="col-sm-4">
+				<a target='_blank' href="https://lisfano.carto.com/viz/6c7c948a-2fe0-11e6-bdfa-0e674067d321/public_map"> <img class="img-circle img-responsive img-center" src="./images/GHG.png" alt="A CARTO map of GHG emissions"></a>
+				<h3>Greenhouse Gas Emissions</h3>
+				<hr class="hr-sm"></hr>
+				<p>This interactive map displays 2014 greenhouse gas (GHG) emissions from large U.S. waste facilities, in addition to summarized GHG totals per square kilometer by state. Both choropleth and graduated symbology were used to display these data. </p>
+				<p style="margin-top:15px;"><b>Languages:</b> JavaScript, HTML, CSS, SQL
+					<br><b>Applications:</b> QGIS, CARTO</p> <a type="view" target='_blank' href="https://lisfano.carto.com/viz/6c7c948a-2fe0-11e6-bdfa-0e674067d321/public_map" class="btn btn-default" role="button">View Web Map</a> </div>
+			<!-- Cancer Mortality -->
+			<div class="col-sm-4">
+				<a target='_blank' href="https://lisfano.carto.com/viz/d85f0bbc-2a84-11e6-aa26-0e31c9be1b51/public_map"> <img class="img-circle img-responsive img-center" src="./images/CancerT.png" alt="A CARTO cancer mortality map"></a>
+				<h3>Cancer Mortality Rates</h3>
+				<hr class="hr-sm"></hr>
+				<p>This interactive web map shows the distribution of cancer rates averaged over a 5-year period (2008-2012) by county. The data were downloaded from the National Cancer Institute and displayed as a choropleth map where mortality rate is averaged per 100,000 residents.</p>
+				<p style="margin-top:15px;"><b>Languages:</b> JavaScript, HTML, CSS, SQL
+					<br><b>Applications:</b> QGIS, CARTO</p> <a type="view" target='_blank' href="https://lisfano.carto.com/viz/d85f0bbc-2a84-11e6-aa26-0e31c9be1b51/public_map" class="btn btn-default" role="button">View Web Map</a> </div>
+		</div>
+		<hr class="hr-hide"></hr>
+		<div class="row">
+			<!-- Power Plants -->
+			<div class="col-sm-4">
+				<a target='_blank' href="https://efano.github.io/bi-variate-prop/"><img class="img-circle img-responsive img-center" src="./images/PwrPlantsT.png"></a>
+				<h3>U.S. Power Plants</h3>
+				<hr class="hr-sm"></hr>
+				<p>This interactive bi-variate web map displays nuclear, hydroelectric, and solar power plants within the United States, symbolized by fuel source and energy output. The proportional circle symbols indicate the amount of power produced from one fuel source. The user can click any blank area on the map to visually filter power plants within 500 kilometers from the click location, then click on a power plant location circle to display its attributes and distance from the original click point. </p>
+				<p style="margin-top:15px;"><b>Languages:</b> LeafletJS, JavaScript, HTML, CSS </p> <a type="view" target='_blank' href="https://efano.github.io/bi-variate-prop/" class="btn btn-default" role="button">View Web Map</a> </div>
+			<!-- Appalachian Trail -->
+			<div class="col-sm-4">
+				<a data-toggle="modal" data-target="#AT_Web"> <img class="img-circle img-responsive img-center" src="./images/AT_WebT.png"></a>
+				<h3>Historic Appalachian Trail</h3>
+				<hr class="hr-sm"></hr>
+				<p>This print map combines the use of contemporary geospatial technologies with historic cartography. The Appalachian Trail is overlaid with a georeferenced copy of the 1957 Landforms of the United States map by Erwin Raisz. This map was created by georeferencing ground control points and graticule interseactions dispayed on Raisz' historical map with a present-day graticule grid. </p>
+				<p style="margin-top:15px;"><b>Application:</b> QGIS</p>
+				<button type="view" class="btn btn-default" data-toggle="modal" data-target="#AT_Web">View Map</button>
+			</div>
+			<!-- Breweries -->
+			<div class="col-sm-4">
+				<a data-toggle="modal" data-target="#Breweries_Web"> <img class="img-circle img-responsive img-center" src="./images/BreweriesWebT.png"></a>
+				<h3>North American Breweries</h3>
+				<hr class="hr-sm"></hr>
+				<p>A hexagonal binning technique (hexbins), was used to create this high density heatmap. Brewery point location data were aggregated into individual 50-kilometer diameter hexagonal polygons and symbolized according to quantity. Denver, Colorado has the highest density of breweries in North America.</p>
+				<p style="margin-top:15px;"><b>Applications:</b> QGIS, Photoshop</p>
+				<button type="view" class="btn btn-default" data-toggle="modal" data-target="#Breweries_Web">View Map</button>
+			</div>
+		</div>
+		<hr class="hr-hide"></hr>
+		<div class="row">
+			<!-- Berlin -->
+			<div class="col-sm-4">
+				<a data-toggle="modal" data-target="#Berlin_Web"> <img class="img-circle img-responsive img-center" src="./images/Berlin_WebT.png"></a>
+				<h3>Bus Stop Friendly Berlin</h3>
+				<hr class="hr-sm"></hr>
+				<p>This &frac34; kilometer buffer analysis of bus stop locations displays one of the many excellent public transportation options available within Berlin, Germany. All data, including bus stops, roads, boundaries and water features were downloaded from OpenStreetMap and designed in QGIS.</p>
+				<p style="margin-top:15px;"><b>Applications:</b> QGIS utilizing SQLight (SpatialLite) database, OpenStreetMap</p>
+				<button type="view" class="btn btn-default" data-toggle="modal" data-target="#Berlin_Web">View Map</button>
+			</div>
+			<!-- Tlingit Placenames-->
+			<div class="col-sm-4">
+				<a data-toggle="modal" data-target="#GE_Web"> <img class="img-circle img-responsive img-center" src="./images/GE_T.png"></a>
+				<h3>Tlingit Placename Illustration</h3>
+				<hr class="hr-sm"></hr>
+				<p>Glacier Bay, Alaska is the ancestral homeland of the Huna Tlingit. The Little Ice Age, a geologically recent glacial advance reached its maximum extent in the mid 1700s. The geographical placenames associated with the geology of this landscape are still part of today's Tlingit language. This map was designed as an anthropological research illustration and displays the retreating glacier layered over the current geography of the area.</p>
+				<p style="margin-top:15px;"><b>Applications:</b> ArcMap, Photoshop</p>
+				<button type="view" class="btn btn-default" data-toggle="modal" data-target="#GE_Web">View Map</button>
+			</div>
+			<!-- IPHC -->
+			<div class="col-sm-4">
+				<a data-toggle="modal" data-target="#IPHC_Web"> <img class="img-circle img-responsive img-center" src="./images/IPHC_T.png"></a>
+				<h3>IPHC Statistical Harvest Data</h3>
+				<hr class="hr-sm"></hr>
+				<p>The International Pacific Halibut Commission (IPHC) studies the management of the stocks of Pacific halibut (Hippoglossus stenolepis) within the Convention waters of the United States and Canada. Commercial fishing is still permitted under certain circumstances within Glacier Bay National Park. This screenshot displays an interactive web map developed for the National Park Service that combines both spatial and temporal IPHC statistical harvest data.</p>
+				<p style="margin-top:15px;"><b>Languages:</b> JavaScript, HTML, CSS, SQL
+					<br><b>Applications:</b> ArcMap, ArcGIS Viewer for Flex</p>
+				<button type="view" class="btn btn-default" data-toggle="modal" data-target="#IPHC_Web">View Map</button>
+			</div>
+		</div>
+		<!-- Modals -->
+		<div class="modal fade" id="AT_Web" tabindex="-1">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title">Historic Appalachian Trail</h4> </div>
+					<div class="modal-body">
+						<a href="./images/AT_Web.png" id="AT_Web"> <img src="./images/AT_Web.png" style="width: 100%;"></a>
+					</div>
+					<div class="modal-footer">
+						<p align="left">This print map combines the use of contemporary geospatial technologies with historic cartography. The Appalachian Trail is overlaid with a georeferenced copy of the 1957 Landforms of the United States map by Erwin Raisz. This map was created by georeferencing ground control points and graticule interseactions dispayed on Raisz' historical map with a present-day graticule grid. </p>
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="Breweries_Web" tabindex="-1">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title">North American Breweries</h4> </div>
+					<div class="modal-body">
+						<a href="./images/Breweries_Web.png" id="Breweries_Web"> <img src="./images/Breweries_Web.png" style="width: 100%;"></a>
+					</div>
+					<div class="modal-footer">
+						<p align="left">A hexagonal binning technique (hexbins), was used to create this high density heatmap. Brewery point location data were aggregated into individual 50-kilometer diameter hexagonal polygons and symbolized according to quantity. Denver, Colorado has the highest density of breweries in North America.</p>
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="Berlin_Web" tabindex="-1">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title">Bus Stop Friendly Berlin</h4> </div>
+					<div class="modal-body">
+						<a href="./images/Berlin_Web.png" id="Berlin_Web"> <img src="./images/Berlin_Web.png" style="width: 100%;"></a>
+					</div>
+					<div class="modal-footer">
+						<p align="left">This &frac34; kilometer buffer analysis of bus stop locations displays one of the many excellent public transportation options available within Berlin, Germany. All data, including bus stops, roads, boundaries and water features were downloaded from OpenStreetMap and designed in QGIS.</p>
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="GE_Web" tabindex="-1">
+			<div class="modal-dialog modal-md">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title">Tlingit Placename Illustration</h4> </div>
+					<div class="modal-body">
+						<a href="./images/GE_Web.png" id="GE_Web"> <img src="./images/GE_Web.png" style="width: 100%;"></a>
+					</div>
+					<div class="modal-footer">
+						<p align="left">Glacier Bay, Alaska is the ancestral homeland of the Huna Tlingit. The Little Ice Age, a geologically recent glacial advance reached its maximum extent in the mid 1700s. The geographical placenames associated with the geology of this landscape are still part of today's Tlingit language. This map was designed as an anthropological research illustration and displays the retreating glacier layered over the current geography of the area.</p>
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="IPHC_Web" tabindex="-1">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title">IPHC Statistical Harvest Data</h4> </div>
+					<div class="modal-body">
+						<a href="./images/IPHC_Web.jpg" id="IPHC_Web"> <img src="./images/IPHC_Web.jpg" style="width: 100%;"></a>
+					</div>
+					<div class="modal-footer">
+						<p align="left">The International Pacific Halibut Commission (IPHC) studies the management of the stocks of Pacific halibut (Hippoglossus stenolepis) within the Convention waters of the United States and Canada. Commercial fishing is still permitted under certain circumstances within Glacier Bay National Park. This screenshot displays an interactive web map developed for the National Park Service that combines both spatial and temporal IPHC statistical harvest data.</p>
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr class="hr-hide"></hr>
+	</div>
 </body>
+
 </html>
