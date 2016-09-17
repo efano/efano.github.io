@@ -84,6 +84,15 @@ dfn {
 	font-style: italic;
 }
 
+.bk-image {
+	height: 450px;
+	background: url('../images/bk-image.png') center center no-repeat scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
 h1 {
 	font-size: 2em;
 	margin: 0.67em 0;
