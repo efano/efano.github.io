@@ -1,8 +1,8 @@
 <?php
 
 // configure
-$from = 'email <&#108;&#105;&#115;&#102;&#097;&#110;&#111;&#064;&#104;&#111;&#116;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;>'; 
-$sendTo = 'email <&#108;&#105;&#115;&#102;&#097;&#110;&#111;&#064;&#104;&#111;&#116;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;>';
+$from = 'email <lisfano@hotmail.com>'; 
+$sendTo = 'email <lisfano@hotmail.com>';
 $subject = 'New Message from Portfolio';
 $fields = array('name' => 'Name', 'email' => 'Email', 'message' => 'Message'); // array variable name => Text to appear in email
 $okMessage = 'Contact form successfully submitted.';
