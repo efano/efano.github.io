@@ -33,7 +33,11 @@ aside,
 details,
 figcaption,
 figure,
-footer,
+footer {
+    margin-left: -50px;
+}
+
+,
 header,
 hgroup,
 main,
