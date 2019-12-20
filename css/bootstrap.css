@@ -268,9 +268,9 @@ th {
         text-shadow: none !important;
     }
     a,
-    a:visited {
+    /* a:visited {
         text-decoration: underline;
-    }
+    } */
     a[href]:after {
         content: " (" attr(href) ")";
     }
@@ -1436,8 +1436,7 @@ a {
     text-decoration: none;
 }
 
-a:hover,
-a:focus {
+a:hover {
     color: #d9230f;
     text-decoration: underline;
 }
@@ -4179,8 +4178,7 @@ fieldset[disabled] .btn-link {
     border-color: transparent;
 }
 
-.btn-link:hover,
-.btn-link:focus {
+.btn-link:hover {
     color: #d9230f;
     text-decoration: underline;
     background-color: transparent;

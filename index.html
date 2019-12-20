@@ -5,19 +5,20 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Lis Fano Portfolio">
     <meta name="Lis Fano Portfolio" content="Lis Fano Portfolio">
     <title>Lis Fano Portfolio</title>
     <!-- CSS -->
     <link href="./css/bootstrap.css" rel="stylesheet">
     <link href="./css/font-awesome.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> </head>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
 
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
-            <div class="navbar-header"><a href="#" class="navbar-brand">LIS FANO</a>
+            <div class="navbar-header"><a target="_blank" href="https://github.com/efano" class="navbar-brand">LIS
+                    FANO</a>
 
             </div>
 
@@ -32,175 +33,386 @@
             </div>
         </div>
         <div class="row">
+            <!-- Fatal Journeys -->
+            <div class="col-sm-4">
+                <a target="_blank" href="https://efano.github.io/global-migrant-deaths/migrant-deaths.html"><img
+                        class="img-circle img-responsive img-center" src="./images/migrant-deathsT.png"
+                        alt="mapping migrant deaths"></a>
+                <h3>Fatal Journeys</h3>
+                <hr class="hr-sm" />
+                <p>Every year, hundreds of thousands of people leave their homes in search of a better life. Many are
+                    injured or killed, while many more go missing. The <a target="_blank"
+                        href="https://missingmigrants.iom.int/">U.N.’s
+                        International Organization for Migration's (IOM) Missing Migrants Project </a>tracks incidents
+                    involving migrants, including refugees and asylum-seekers, who have died or gone missing in the
+                    process of migration towards an international
+                    destination. The code for this web map can be
+                    viewed on <a target="_blank"
+                        href="https://github.com/efano/global-migrant-deaths/blob/master/migrant-deaths.html">Github</a>.
+                </p>
+                <p style="margin-top:15px;"><b>Languages:</b> JavaScript, HTML, CSS
+                    <br><b>Libraries:</b> Mapbox GL JS, D3.js
+                    <br><b>Data Sources: </b><a target="_blank" href="https://missingmigrants.iom.int/downloads">Missing
+                        Migrant Project</a></p><a type="view" target="_blank"
+                    href="https://efano.github.io/global-migrant-deaths/migrant-deaths.html"
+                    class="btn btn-default btn-sm" role="button">View
+                    Web Map</a>
+            </div>
+            <!-- Coastal Vulnerability -->
+            <div class="col-sm-4">
+                <a target="_blank" href="https://efano.github.io/coastal-vulnerability/"><img
+                        class="img-circle img-responsive img-center" src="./images/beachesT.png"
+                        alt="coastal vulnerability"></a>
+                <h3>Coastal Vulnerability</h3>
+                <hr class="hr-sm" />
+                <p>This web map visualizes the relative susceptibility of coastal beaches to sea-level rise through the
+                    use of a <a target="_blank"
+                        href="https://marine.usgs.gov/coastalchangehazardsportal/ui/info/item/CDKmLpj">coastal
+                        vulnerability index (CVI)</a>. The initial classification used in the CVI is based upon
+                    geomorphology, regional coastal slope, tide range, wave height,
+                    relative sea-level rise and shoreline erosion and accretion rates. The combination of these
+                    variables furnish a broad overview where physical changes are likely to occur due to
+                    sea-level rise. The code for this web map can be viewed on <a target="_blank"
+                        href="https://github.com/efano/coastal-vulnerability/blob/master/README.md">Github</a>.</p>
+                <p style="margin-top:15px;"><b>Languages:</b> JavaScript, HTML, CSS
+                    <br><b>Libraries:</b> Leaflet, Node.js
+                    <br><b>Data Sources: </b><a target="_blank"
+                        href="https://marine.usgs.gov/coastalchangehazardsportal/ui/info/item/CDKmLpj">USGS Coastal
+                        Change Hazards Portal </a>and
+                    <a target="_blank"
+                        href="https://www.usgs.gov/core-science-systems/ngp/board-on-geographic-names/download-gnis-data">U.S.
+                        Board on
+                        Geographic Names</a></p><a type="view" target="_blank"
+                    href="https://efano.github.io/coastal-vulnerability/" class="btn btn-default btn-sm"
+                    role="button">View Web Map</a>
+            </div>
+
+            <!-- NZ Invasive Water Buttercup -->
+            <div class="col-sm-4">
+                <a target="_blank" href="https://efano.github.io/invasive-water-buttercup/"><img
+                        class="img-circle img-responsive img-center" src="./images/NZ-invasiveT.png"
+                        alt="invasive flora species"></a>
+                <h3>Invasive Flora Species</h3>
+                <hr class="hr-sm" />
+                <p>Node.js is an open-source, JavaScript framework that executes JavaScript code outside of a browser.
+                    This project uses Node and npm to load and process data including reading, parsing and writing JSON
+                    system files used to create and structure the data used in the web map. A coordinated legend and data
+                    layer visualization, along with point aggregation using the Leaflet marker
+                    cluster plugin are also demonstrated. The code for this web map can be viewed on <a target="_blank"
+                        href="https://github.com/efano/invasive-water-buttercup/blob/master/README.md">Github</a>. </p>
+                <p style="margin-top:15px;"><b>Languages:</b> JavaScript, HTML, CSS
+                    <br><b>Libraries:</b> Leaflet, D3.js, Node.js, jQuery
+                    <br><b>Data Sources: </b><a target="_blank"
+                        href="https://datafinder.stats.govt.nz/search/?q=statsnzregional-council-2015-v1-00-clipped-SHP">
+                        Stats NZ </a>and
+                    <a target="_blank" href="https://data.mfe.govt.nz/layer/52742-freshwater-pests-water-buttercup/">MfE
+                        Data Service</a></p> <a type="view" target="_blank"
+                    href="https://efano.github.io/invasive-water-buttercup/" class="btn btn-default btn-sm"
+                    role="button">View
+                    Web Map</a>
+            </div>
+        </div>
+        <hr class="hr-hide" />
+        <div class="row">
             <!-- IPHC Setline Surveys -->
             <div class="col-sm-4">
-                <a target='_blank' href="https://efano.github.io/iphc_survey_map/"><img class="img-circle img-responsive img-center" src="./images/IPHCS_T.png" alt="An IPHC survey map"></a>
+                <a target="_blank" href="https://efano.github.io/iphc_survey_map/"><img
+                        class="img-circle img-responsive img-center" src="./images/IPHCS_T.png"
+                        alt="An IPHC survey map"></a>
                 <h3>IPHC Setline Surveys</h3>
                 <hr class="hr-sm" />
-                <p>The <a target="_blank" href="http://www.iphc.int/">International Pacific Halibut Commission (IPHC)</a> conducts annual surveys that collect standardized data used for halibut stock assessment. This interactive web map displays the station locations and regulatory areas where the annual setline surveys occur. The data used in this exploratory analysis are from 1998 through 2015, and include total count and weight of fish at each survey station. The code for this web map can be viewed on <a target='_blank' href="https://github.com/efano/iphc_survey_map">Github</a>.</p>
+                <p>The <a target="_blank" href="http://www.iphc.int/">International Pacific Halibut Commission
+                        (IPHC)</a> conducts annual surveys that collect standardized data used for halibut stock
+                    assessment. This interactive web map displays the station locations and regulatory areas where the
+                    annual setline surveys occur. The data used in this exploratory analysis are from 1998 through 2015,
+                    and include total count and weight of fish at each survey station. The code for this web map can be
+                    viewed on <a target="_blank" href="https://github.com/efano/iphc_survey_map">Github</a>.</p>
                 <p style="margin-top:15px;"><b>Languages:</b> JavaScript, HTML, CSS
                     <br><b>Applications:</b> QGIS, ArcMap, KNIME, Illustrator
-                    <br><b>Libraries:</b> Mapbox, LeafletJS, jQuery, jQuery Sparklines
-                    <br><b>Data Sources: </b><a target='_blank' href="http://www.iphc.int/">International Pacific Halibut Commission</a></p><a type="view" target='_blank' href="https://efano.github.io/iphc_survey_map/" class="btn btn-default btn-sm" role="button">View Web Map</a></div>
+                    <br><b>Libraries:</b> Mapbox, Leaflet, jQuery, jQuery Sparklines
+                    <br><b>Data Sources: </b><a target="_blank" href="http://www.iphc.int/">International Pacific
+                        Halibut Commission</a></p><a type="view" target="_blank"
+                    href="https://efano.github.io/iphc_survey_map/" class="btn btn-default btn-sm" role="button">View
+                    Web Map</a>
+            </div>
             <!-- Kenya Education -->
             <div class="col-sm-4">
-                <a target='_blank' href="https://efano.github.io/kenyan_education_map/"><img class="img-circle img-responsive img-center" src="./images/Kenya.png" alt="A map of Kenyan attrition rates"></a>
+                <a target="_blank" href="https://efano.github.io/kenyan_education_map/"><img
+                        class="img-circle img-responsive img-center" src="./images/Kenya.png"
+                        alt="A map of Kenyan attrition rates"></a>
                 <h3>Student Attrition Rates</h3>
                 <hr class="hr-sm" />
-                <p>This map compares 2014 Kenyan primary (grades 1-8) and secondary (grades 9-12) enrollment totals of girls and boys by county. Data for this analysis were collected as part of the 2014 national schools census. The size of each circle on the map corresponds to countywide enrollment, where larger circles represent greater enrollment totals.Each symbol is apportioned and assigned a color by gender.The code for this web map can be viewed on <a target='_blank' href="https://github.com/efano/kenyan_education_map/blob/master/index.html">Github</a>.</p>
+                <p>This map compares 2014 Kenyan primary (grades 1-8) and secondary (grades 9-12) enrollment totals of
+                    girls and boys by county. Data for this analysis were collected as part of the 2014 national schools
+                    census. The size of each circle on the map corresponds to countywide enrollment, where larger
+                    circles represent greater enrollment totals. Each symbol is apportioned and assigned a color by
+                    gender. The code for this web map can be viewed on <a target="_blank"
+                        href="https://github.com/efano/kenyan_education_map/blob/master/index.html">Github</a>.</p>
                 <p style="margin-top:15px;"><b>Languages:</b> JavaScript, HTML, CSS
                     <br><b>Applications:</b> Illustrator, Excel
-                    <br><b>Libraries:</b> Mapbox, LeafletJS, jQuery
-                    <br><b>Data Sources: </b><a target='_blank' href="https://opendata.go.ke/">Kenya Open Data Portal </a></p><a type="view" target='_blank' href="https://efano.github.io/kenyan_education_map/" class="btn btn-default btn-sm" role="button">View Web Map</a></div>
+                    <br><b>Libraries:</b> Mapbox, Leaflet, jQuery
+                    <br><b>Data Sources: </b><a target="_blank" href="https://opendata.go.ke/">Kenya Open Data Portal
+                    </a></p><a type="view" target="_blank" href="https://efano.github.io/kenyan_education_map/"
+                    class="btn btn-default btn-sm" role="button">View Web Map</a>
+            </div>
             <!-- Power Plants -->
             <div class="col-sm-4">
-                <a target='_blank' href="https://efano.github.io/bi-variate-prop/"><img class="img-circle img-responsive img-center" src="./images/PwrPlantsT.png"></a>
+                <a target="_blank" href="https://efano.github.io/bi-variate-prop/"><img
+                        class="img-circle img-responsive img-center" src="./images/PwrPlantsT.png"></a>
                 <h3>U.S. Power Plants</h3>
                 <hr class="hr-sm" />
-                <p>This interactive bivariate web map displays nuclear, hydroelectric, and solar power plants within the United States, symbolized by fuel source and energy output. The proportional circle symbols indicate the amount of power produced from one fuel source. The user can click any blank area on the map to visually filter power plants within 500 kilometers from the click location, then click on a power plant location circle to display its attributes and distance from the original click point. The code for this web map can be viewed on <a target='_blank' href="https://github.com/efano/bi-variate-prop/blob/gh-pages/index.html">Github</a>. </p>
+                <p>This interactive bivariate web map displays nuclear, hydroelectric, and solar power plants within the
+                    United States, symbolized by fuel source and energy output. The proportional circle symbols indicate
+                    the amount of power produced from one fuel source. The user can click any blank area on the map to
+                    visually filter power plants within 500 kilometers from the click location, then click on a power
+                    plant location circle to display its attributes and distance from the original click point. The code
+                    for this web map can be viewed on <a target="_blank"
+                        href="https://github.com/efano/bi-variate-prop/blob/gh-pages/index.html">Github</a>. </p>
                 <p style="margin-top:15px;"><b>Languages:</b> JavaScript, HTML, CSS
-                    <br><b>Libraries:</b> LeafletJS
-                    <br><b>Data Sources: </b><a target='_blank' href="https://www.eia.gov/electricity/data/eia923/">U.S. Energy Information Administration</a></p> <a type="view" target='_blank' href="https://efano.github.io/bi-variate-prop/" class="btn btn-default btn-sm" role="button">View Web Map</a></div>
+                    <br><b>Libraries:</b> Leaflet
+                    <br><b>Data Sources: </b><a target="_blank" href="https://www.eia.gov/electricity/data/eia923/">U.S.
+                        Energy Information Administration</a></p> <a type="view" target="_blank"
+                    href="https://efano.github.io/bi-variate-prop/" class="btn btn-default btn-sm" role="button">View
+                    Web Map</a>
+            </div>
         </div>
         <hr class="hr-hide" />
         <div class="row">
             <!-- Digital Nomad -->
             <div class="col-sm-4">
-                <a target='_blank' href="https://lisfano.carto.com/viz/84dde768-34d1-11e6-bdbe-0e674067d321/public_map"><img class="img-circle img-responsive img-center" src="./images/CG2L.png" alt="A proximity analysis CARTO map"></a>
+                <a target="_blank"
+                    href="https://lisfano.carto.com/viz/84dde768-34d1-11e6-bdbe-0e674067d321/public_map"><img
+                        class="img-circle img-responsive img-center" src="./images/CG2L.png"
+                        alt="A proximity analysis CARTO map"></a>
                 <h3>The Digital Nomad Map</h3>
                 <hr class="hr-sm" />
-                <p>A playful CARTO map that displays the result of a nationwide, ten linear mile proximity analysis between public campgrounds and public libraries. In this analysis a maximum ten-mile linear hub-line feature is included to quickly visualize the nearest campground-to-library relationship.</p>
+                <p>A playful CARTO map that displays the result of a nationwide, ten linear mile proximity analysis
+                    between public campgrounds and public libraries. In this analysis a maximum ten-mile linear hub-line
+                    feature is included to quickly visualize the nearest campground-to-library relationship.</p>
                 <p style="margin-top:15px;"><b>Languages:</b> JavaScript, HTML, CSS, SQL
                     <br><b>Applications:</b> QGIS, KNIME, CARTO
-                    <br><b>Data Sources: </b><a target='_blank' href="http://www.poi-factory.com/">POI Factory</a> and <a target='_blank' href="http://www.uscampgrounds.info/">USACAmpgrounds</a></p><a type="view" target='_blank' href="https://lisfano.carto.com/viz/84dde768-34d1-11e6-bdbe-0e674067d321/public_map" class="btn btn-default btn-sm" role="button">View Web Map</a></div>
+                    <br><b>Data Sources: </b><a target="_blank" href="http://www.poi-factory.com/">POI Factory</a> and
+                    <a target="_blank" href="http://www.uscampgrounds.info/">USACAmpgrounds</a></p><a type="view"
+                    target="_blank" href="https://lisfano.carto.com/viz/84dde768-34d1-11e6-bdbe-0e674067d321/public_map"
+                    class="btn btn-default btn-sm" role="button">View Web Map</a>
+            </div>
             <!-- Greenhouse Gases -->
             <div class="col-sm-4">
-                <a target='_blank' href="https://lisfano.carto.com/viz/6c7c948a-2fe0-11e6-bdfa-0e674067d321/public_map"><img class="img-circle img-responsive img-center" src="./images/GHG.png" alt="A CARTO map of GHG emissions"></a>
+                <a target="_blank"
+                    href="https://lisfano.carto.com/viz/6c7c948a-2fe0-11e6-bdfa-0e674067d321/public_map"><img
+                        class="img-circle img-responsive img-center" src="./images/GHG.png"
+                        alt="A CARTO map of GHG emissions"></a>
                 <h3>Greenhouse Gas Emissions</h3>
                 <hr class="hr-sm" />
-                <p>This interactive map displays 2014 greenhouse gas (GHG) emissions from large U.S. waste facilities, in addition to summarized GHG totals per square kilometer by state. Both choropleth and graduated symbology were used to display these data.</p>
+                <p>This interactive map displays 2014 greenhouse gas (GHG) emissions from large U.S. waste facilities,
+                    in addition to summarized GHG totals per square kilometer by state. Both choropleth and graduated
+                    symbology were used to display these data.</p>
                 <p style="margin-top:15px;"><b>Languages:</b> JavaScript, HTML, CSS, SQL
                     <br><b>Applications:</b> QGIS, CARTO
-                    <br><b>Data Sources: </b><a target='_blank' href="https://www.epa.gov/ghgreporting/ghg-reporting-program-data-sets">US Environmental Protection Agency</a></p><a type="view" target='_blank' href="https://lisfano.carto.com/viz/6c7c948a-2fe0-11e6-bdfa-0e674067d321/public_map" class="btn btn-default btn-sm" role="button">View Web Map</a></div>
+                    <br><b>Data Sources: </b><a target="_blank"
+                        href="https://www.epa.gov/ghgreporting/ghg-reporting-program-data-sets">US Environmental
+                        Protection Agency</a></p><a type="view" target="_blank"
+                    href="https://lisfano.carto.com/viz/6c7c948a-2fe0-11e6-bdfa-0e674067d321/public_map"
+                    class="btn btn-default btn-sm" role="button">View Web Map</a>
+            </div>
             <!-- Cancer Mortality -->
             <div class="col-sm-4">
-                <a target='_blank' href="https://lisfano.carto.com/viz/d85f0bbc-2a84-11e6-aa26-0e31c9be1b51/public_map"> <img class="img-circle img-responsive img-center" src="./images/CancerT.png" alt="A CARTO cancer mortality map"></a>
+                <a target="_blank" href="https://lisfano.carto.com/viz/d85f0bbc-2a84-11e6-aa26-0e31c9be1b51/public_map">
+                    <img class="img-circle img-responsive img-center" src="./images/CancerT.png"
+                        alt="A CARTO cancer mortality map"></a>
                 <h3>Cancer Mortality Rates</h3>
                 <hr class="hr-sm" />
-                <p>This interactive web map shows the distribution of cancer rates averaged over a 5-year period (2008-2012) by county. The data were downloaded from the National Cancer Institute and displayed as a choropleth map where mortality rate is averaged per 100,000 residents.</p>
+                <p>This interactive web map shows the distribution of cancer rates averaged over a 5-year period
+                    (2008-2012) by county. The data were downloaded from the National Cancer Institute and displayed as
+                    a choropleth map where mortality rate is averaged per 100,000 residents.</p>
                 <p style="margin-top:15px;"><b>Languages:</b> JavaScript, HTML, CSS, SQL
                     <br><b>Applications:</b> QGIS, CARTO
-                    <br><b>Data Sources: </b><a target='_blank' href="https://www.statecancerprofiles.cancer.gov/">National Cancer Institute</a></p><a type="view" target='_blank' href="https://lisfano.carto.com/viz/d85f0bbc-2a84-11e6-aa26-0e31c9be1b51/public_map" class="btn btn-default btn-sm" role="button">View Web Map</a></div>
+                    <br><b>Data Sources: </b><a target="_blank"
+                        href="https://www.statecancerprofiles.cancer.gov/">National Cancer Institute</a></p><a
+                    type="view" target="_blank"
+                    href="https://lisfano.carto.com/viz/d85f0bbc-2a84-11e6-aa26-0e31c9be1b51/public_map"
+                    class="btn btn-default btn-sm" role="button">View Web Map</a>
+            </div>
         </div>
         <hr class="hr-hide" />
         <div class="row">
             <!-- Appalachian Trail -->
             <div class="col-sm-4">
-                <a data-toggle="modal" data-target="#AT_Web"><img class="img-circle img-responsive img-center" src="./images/AT_WebT.png"></a>
+                <a data-toggle="modal" data-target="#AT_Web"><img class="img-circle img-responsive img-center"
+                        src="./images/AT_WebT.png"></a>
                 <h3>Historic Appalachian Trail</h3>
                 <hr class="hr-sm" />
-                <p>This print map combines the use of contemporary geospatial technologies with historic cartography. The Appalachian Trail is overlaid with a georeferenced copy of the 1957 <a target='_blank' href="http://www.raiszmaps.com/">Landforms of the United States</a> map by <a target='_blank' href="https://en.wikipedia.org/wiki/Erwin_Raisz">Erwin Raisz</a>. This map was created by georeferencing ground control points and graticule interseactions dispayed on Raisz' historical map with a present-day graticule grid. </p>
+                <p>This print map combines the use of contemporary geospatial technologies with historic cartography.
+                    The Appalachian Trail is overlaid with a georeferenced copy of the 1957 <a target="_blank"
+                        href="http://www.raiszmaps.com/">Landforms of the United States</a> map by <a target="_blank"
+                        href="https://en.wikipedia.org/wiki/Erwin_Raisz">Erwin Raisz</a>. This map was created by
+                    georeferencing ground control points and graticule interseactions dispayed on Raisz" historical map
+                    with a present-day graticule grid. </p>
                 <p style="margin-top:15px;"><b>Application:</b> QGIS
-                    <br><b>Data Sources: </b><a target='_blank' href="http://www.davidrumsey.com/luna/servlet/detail/RUMSEY~8~1~231095~5508485:United-States----Physical-Landforms?sort=Pub_List_No_InitialSort%2CPub_Date%2CPub_List_No%2CSeries_No&qvq=q:erwin%2Braisz%2Blandforms%2Bof%2Bthe%2Bunited%2Bstates;sort:Pub_List_No_InitialSort%2CPub_Date%2CPub_List_No%2CSeries_No;lc:RUMSEY~8~1&mi=1&trs=7">David Rumsey Map Collection</a>, <a target='_blank' href="http://www.appalachiantrail.org/">Appalachian Trail Conservancy</a> and <a target='_blank' href="http://www.naturalearthdata.com/">Natural Earth</a></p>
-                <button type="view" class="btn btn-default btn-sm" data-toggle="modal" data-target="#AT_Web">View Map</button>
+                    <br><b>Data Sources: </b><a target="_blank"
+                        href="http://www.davidrumsey.com/luna/servlet/detail/RUMSEY~8~1~231095~5508485:United-States----Physical-Landforms?sort=Pub_List_No_InitialSort%2CPub_Date%2CPub_List_No%2CSeries_No&qvq=q:erwin%2Braisz%2Blandforms%2Bof%2Bthe%2Bunited%2Bstates;sort:Pub_List_No_InitialSort%2CPub_Date%2CPub_List_No%2CSeries_No;lc:RUMSEY~8~1&mi=1&trs=7">David
+                        Rumsey Map Collection</a>, <a target="_blank"
+                        href="http://www.appalachiantrail.org/">Appalachian Trail Conservancy</a> and <a target="_blank"
+                        href="http://www.naturalearthdata.com/">Natural Earth</a></p>
+                <button type="view" class="btn btn-default btn-sm" data-toggle="modal" data-target="#AT_Web">View
+                    Map</button>
             </div>
             <!-- Berlin -->
             <div class="col-sm-4">
-                <a data-toggle="modal" data-target="#Berlin_Web"><img class="img-circle img-responsive img-center" src="./images/Berlin_WebT.png"></a>
+                <a data-toggle="modal" data-target="#Berlin_Web"><img class="img-circle img-responsive img-center"
+                        src="./images/Berlin_WebT.png"></a>
                 <h3>Bus Stop Friendly Berlin</h3>
                 <hr class="hr-sm" />
-                <p>This &frac34; kilometer buffer analysis of bus stop locations displays one of the many excellent public transportation options available within Berlin, Germany. All data, including bus stops, roads, boundaries and water features were downloaded from OpenStreetMap and designed in QGIS.</p>
-                <p style="margin-top:15px;"><b>Applications:</b> QGIS utilizing SQLight (SpatiaLite) database, OpenStreetMap
-                    <br><b>Data Sources: </b><a target='_blank' href="https://www.openstreetmap.org/">OpenStreetMap</a></p>
-                <button type="view" class="btn btn-default btn-sm" data-toggle="modal" data-target="#Berlin_Web">View Map</button>
+                <p>This &frac34; kilometer buffer analysis of bus stop locations displays one of the many excellent
+                    public transportation options available within Berlin, Germany. All data, including bus stops,
+                    roads, boundaries and water features were downloaded from OpenStreetMap and designed in QGIS.</p>
+                <p style="margin-top:15px;"><b>Applications:</b> QGIS utilizing SQLight (SpatiaLite) database,
+                    OpenStreetMap
+                    <br><b>Data Sources: </b><a target="_blank" href="https://www.openstreetmap.org/">OpenStreetMap</a>
+                </p>
+                <button type="view" class="btn btn-default btn-sm" data-toggle="modal" data-target="#Berlin_Web">View
+                    Map</button>
             </div>
             <!-- Breweries -->
             <div class="col-sm-4">
-                <a data-toggle="modal" data-target="#Breweries_Web"><img class="img-circle img-responsive img-center" src="./images/BreweriesWebT.png"></a>
+                <a data-toggle="modal" data-target="#Breweries_Web"><img class="img-circle img-responsive img-center"
+                        src="./images/BreweriesWebT.png"></a>
                 <h3>North American Breweries</h3>
                 <hr class="hr-sm" />
-                <p>A hexagonal binning technique (hexbins), was used to create this high density heatmap. Brewery point location data were aggregated into individual 50-kilometer diameter hexagonal polygons and symbolized according to quantity. Denver, Colorado has the highest density of breweries in North America.</p>
+                <p>A hexagonal binning technique (hexbins), was used to create this high density heatmap. Brewery point
+                    location data were aggregated into individual 50-kilometer diameter hexagonal polygons and
+                    symbolized according to quantity. Denver, Colorado has the highest density of breweries in North
+                    America.</p>
                 <p style="margin-top:15px;"><b>Applications:</b> QGIS, Photoshop
-                    <br><b>Data Sources: </b><a target='_blank' href="http://www.poi-factory.com/">POI Factory</a></p>
-                <button type="view" class="btn btn-default btn-sm" data-toggle="modal" data-target="#Breweries_Web">View Map</button>
+                    <br><b>Data Sources: </b><a target="_blank" href="http://www.poi-factory.com/">POI Factory</a></p>
+                <button type="view" class="btn btn-default btn-sm" data-toggle="modal" data-target="#Breweries_Web">View
+                    Map</button>
             </div>
         </div>
         <hr class="hr-hide" />
         <div class="row">
             <!-- IPHC -->
             <div class="col-sm-4">
-                <a data-toggle="modal" data-target="#IPHC_Web"><img class="img-circle img-responsive img-center" src="./images/IPHC_T.png"></a>
+                <a data-toggle="modal" data-target="#IPHC_Web"><img class="img-circle img-responsive img-center"
+                        src="./images/IPHC_T.png"></a>
                 <h3>IPHC Statistical Harvest Data</h3>
                 <hr class="hr-sm" />
-                <p>The <a target='_blank' href="http://www.iphc.int/">International Pacific Halibut Commission</a> (IPHC) studies the management of the stocks of Pacific halibut (Hippoglossus stenolepis) within the Convention waters of the United States and Canada. Commercial fishing is still permitted under certain circumstances within Glacier Bay National Park. This screenshot displays an interactive web map developed for the National Park Service that combines both spatial and temporal IPHC statistical harvest data.</p>
+                <p>The <a target="_blank" href="http://www.iphc.int/">International Pacific Halibut Commission</a>
+                    (IPHC) studies the management of the stocks of Pacific halibut (Hippoglossus stenolepis) within the
+                    Convention waters of the United States and Canada. Commercial fishing is still permitted under
+                    certain circumstances within Glacier Bay National Park. This screenshot displays an interactive web
+                    map developed for the National Park Service that combines both spatial and temporal IPHC statistical
+                    harvest data.</p>
                 <p style="margin-top:15px;"><b>Languages:</b> ActionScript, JavaScript, HTML, CSS
                     <br><b>Applications:</b> ArcMap, ArcGIS Viewer for Flex
-                    <br><b>Data Sources: </b><a target='_blank' href="http://www.iphc.int/">International Pacific Halibut Commission</a></p>
-                <button type="view" class="btn btn-default btn-sm" data-toggle="modal" data-target="#IPHC_Web">View Map</button>
+                    <br><b>Data Sources: </b><a target="_blank" href="http://www.iphc.int/">International Pacific
+                        Halibut Commission</a></p>
+                <button type="view" class="btn btn-default btn-sm" data-toggle="modal" data-target="#IPHC_Web">View
+                    Map</button>
             </div>
             <!-- GSENM radar -->
             <div class="col-sm-4">
-                <a data-toggle="modal" data-target="#GSENM_wx"><img class="img-circle img-responsive img-center" src="./images/GSENM_wx_T.png"></a>
+                <a data-toggle="modal" data-target="#GSENM_wx"><img class="img-circle img-responsive img-center"
+                        src="./images/GSENM_wx_T.png"></a>
                 <h3>Real-time Visitor Weather App</h3>
                 <hr class="hr-sm" />
-                <p>This live, interactive weather application was designed for the Visitor Information Stations throughout <a target='_blank' href="https://www.blm.gov/programs/national-conservation-lands/utah/grand-staircase-escalante-national-monument">Grand Staircase-Escalante National Monument, Utah</a>. This mashup combines GIS, Monument data, streaming National Weather Service radar data, weather watches, warnings, and public alerts.</p>
+                <p>This live, interactive weather application was designed for the Visitor Information Stations
+                    throughout <a target="_blank"
+                        href="https://www.blm.gov/programs/national-conservation-lands/utah/grand-staircase-escalante-national-monument">Grand
+                        Staircase-Escalante National Monument, Utah</a>. This mashup combines GIS, Monument data,
+                    streaming National Weather Service radar data, weather watches, warnings, and public alerts.</p>
                 <p style="margin-top:15px;"><b>Languages:</b> JavaScript, HTML, CSS
                     <br><b>Applications:</b> ArcMap
-                    <br><b>Data Sources: </b><a target='_blank' href="https://www.weather.gov/">National Weather Service</a></p>
-                <button type="view" class="btn btn-default btn-sm" data-toggle="modal" data-target="#GSENM_wx">View Map</button>
+                    <br><b>Data Sources: </b><a target="_blank" href="https://www.weather.gov/">National Weather
+                        Service</a></p>
+                <button type="view" class="btn btn-default btn-sm" data-toggle="modal" data-target="#GSENM_wx">View
+                    Map</button>
             </div>
             <!-- GUA -->
             <div class="col-sm-4">
-                <a data-toggle="modal" data-target="#GUA"><img class="img-circle img-responsive img-center" src="./images/GUA_T.png"></a>
+                <a data-toggle="modal" data-target="#GUA"><img class="img-circle img-responsive img-center"
+                        src="./images/GUA_T.png"></a>
                 <h3>Offline Scalable Land Use Maps</h3>
                 <hr class="hr-sm" />
-                <p>This interactive map viewer website designed for public use with limited or nonexistent Internet connectivity in rural Alaska. The site provides scalable, detailed information covering a large portion of the state in a manageable and intuitive format. The user can locate and print a desired location targeted to their land use needs.</p>
-                <p style="margin-top:15px;"><b>Languages:</b> ActionScript, JavaScript, HTML, CSS<br><b>Applications:</b> ArcMap, Photoshop, Flash<br><b>Data Sources: </b><a target='_blank' href="https://www.blm.gov/">Bureau of Land Management</a></p>
-                <button type="view" class="btn btn-default btn-sm" data-toggle="modal" data-target="#GUA">View Map</button>
+                <p>This interactive map viewer website designed for public use with limited or nonexistent Internet
+                    connectivity in rural Alaska. The site provides scalable, detailed information covering a large
+                    portion of the state in a manageable and intuitive format. The user can locate and print a desired
+                    location targeted to their land use needs.</p>
+                <p style="margin-top:15px;"><b>Languages:</b> ActionScript, JavaScript, HTML,
+                    CSS<br><b>Applications:</b> ArcMap, Photoshop, Flash<br><b>Data Sources: </b><a target="_blank"
+                        href="https://www.blm.gov/">Bureau of Land Management</a></p>
+                <button type="view" class="btn btn-default btn-sm" data-toggle="modal" data-target="#GUA">View
+                    Map</button>
             </div>
         </div>
         <hr class="hr-hide" />
         <div class="row">
             <!-- Tower -->
             <div class="col-sm-4">
-                <a data-toggle="modal" data-target="#Tower"><img class="img-circle img-responsive img-center" src="./images/Tower_T.png"></a>
+                <a data-toggle="modal" data-target="#Tower"><img class="img-circle img-responsive img-center"
+                        src="./images/Tower_T.png"></a>
                 <h3>3D Modeling</h3>
                 <hr class="hr-sm" />
-                <p>This 3D representation of a developed area within <a target='_blank' href="https://www.nps.gov/yell/index.htm">Yellowstone National Park</a> is one of many building alternative samples included in the planning process to replace a derelict structure. 3D rendering allows planners to conceptually visualize a structure in relationship to the surrounding terrain and adjacent cabins prior to construction.
+                <p>This 3D representation of a developed area within <a target="_blank"
+                        href="https://www.nps.gov/yell/index.htm">Yellowstone National Park</a> is one of many building
+                    alternative samples included in the planning process to replace a derelict structure. 3D rendering
+                    allows planners to conceptually visualize a structure in relationship to the surrounding terrain and
+                    adjacent cabins prior to construction.
                 </p>
                 <p style="margin-top:15px;">
                     <b>Applications:</b> ArcScene, ArcMap
-                    <br><b>Data Sources: </b><a target='_blank' href="https://www.nps.gov/yell/index.htm">National Park Service</a></p>
-                <button type="view" class="btn btn-default btn-sm" data-toggle="modal" data-target="#Tower">View</button>
+                    <br><b>Data Sources: </b><a target="_blank" href="https://www.nps.gov/yell/index.htm">National Park
+                        Service</a></p>
+                <button type="view" class="btn btn-default btn-sm" data-toggle="modal"
+                    data-target="#Tower">View</button>
             </div>
             <!-- Escalante River Watershed -->
             <div class="col-sm-4">
-                <a data-toggle="modal" data-target="#ER"><img class="img-circle img-responsive img-center" src="./images/ERT.png"></a>
+                <a data-toggle="modal" data-target="#ER"><img class="img-circle img-responsive img-center"
+                        src="./images/ERT.png"></a>
                 <h3>Escalante River Watershed</h3>
                 <hr class="hr-sm" />
-                <p>The Escalante River Watershed Partnership is of an ongoing collaborative effort of 22 federal agencies and NGOs dedicated to the eradication of invasive species within the Escalante River watershed. This cartographic design example is of a stream buffer analysis designed to assist workers engaged in vegetation treatments within <a target='_blank' href="https://www.blm.gov/programs/national-conservation-lands/utah/grand-staircase-escalante-national-monument">Grand Staircase-Escalante National Monument, Utah</a>.</p>
+                <p>The Escalante River Watershed Partnership is of an ongoing collaborative effort of 22 federal
+                    agencies and NGOs dedicated to the eradication of invasive species within the Escalante River
+                    watershed. This cartographic design example is of a stream buffer analysis designed to assist
+                    workers engaged in vegetation treatments within <a target="_blank"
+                        href="https://www.blm.gov/programs/national-conservation-lands/utah/grand-staircase-escalante-national-monument">Grand
+                        Staircase-Escalante National Monument, Utah</a>.</p>
                 <p style="margin-top:15px;"><b>Applications:</b> ArcMap
-                    <br><b>Data Sources: </b><a target='_blank' href="https://www.blm.gov">Bureau of Land Management</a></p>
-                <button type="view" class="btn btn-default btn-sm" data-toggle="modal" data-target="#ER">View Map</button>
+                    <br><b>Data Sources: </b><a target="_blank" href="https://www.blm.gov">Bureau of Land Management</a>
+                </p>
+                <button type="view" class="btn btn-default btn-sm" data-toggle="modal" data-target="#ER">View
+                    Map</button>
             </div>
             <!-- Tlingit Placenames-->
             <div class="col-sm-4">
-                <a data-toggle="modal" data-target="#GE_Web"><img class="img-circle img-responsive img-center" src="./images/GE_T.png"></a>
+                <a data-toggle="modal" data-target="#GE_Web"><img class="img-circle img-responsive img-center"
+                        src="./images/GE_T.png"></a>
                 <h3>Tlingit Placename Illustration</h3>
                 <hr class="hr-sm" />
-                <p><a target='_blank' href="https://www.nps.gov/glba/index.htm">Glacier Bay, Alaska</a> is the ancestral homeland of the Huna Tlingit. The Little Ice Age, a geologically recent glacial advance reached its maximum extent in the mid 1700s. The geographical placenames associated with the geology of this landscape are still part of today's Tlingit language. This map was designed as an anthropological research illustration and displays the retreating glacier layered over the current geography of the area.</p>
-                <p style="margin-top:15px;"><b>Applications:</b> ArcMap, Photoshop<br><b>Data Sources: </b><a target='_blank' href="https://www.nps.gov/glba/index.htm">National Park Service</a></p>
-                <button type="view" class="btn btn-default btn-sm" data-toggle="modal" data-target="#GE_Web">View Map</button>
+                <p><a target="_blank" href="https://www.nps.gov/glba/index.htm">Glacier Bay, Alaska</a> is the ancestral
+                    homeland of the Huna Tlingit. The Little Ice Age, a geologically recent glacial advance reached its
+                    maximum extent in the mid 1700s. The geographical placenames associated with the geology of this
+                    landscape are still part of today"s Tlingit language. This map was designed as an anthropological
+                    research illustration and displays the retreating glacier layered over the current geography of the
+                    area.</p>
+                <p style="margin-top:15px;"><b>Applications:</b> ArcMap, Photoshop<br><b>Data Sources: </b><a
+                        target="_blank" href="https://www.nps.gov/glba/index.htm">National Park Service</a></p>
+                <button type="view" class="btn btn-default btn-sm" data-toggle="modal" data-target="#GE_Web">View
+                    Map</button>
             </div>
         </div>
         <hr class="hr-hide" />
         <div class="row">
             <!-- DAP -->
             <div class="col-sm-4">
-                <a data-toggle="modal" data-target="#DAP"><img class="img-circle img-responsive img-center" src="./images/DAP_T.png"></a>
+                <a data-toggle="modal" data-target="#DAP"><img class="img-circle img-responsive img-center"
+                        src="./images/DAP_T.png"></a>
                 <h3>Professional Audience Website</h3>
                 <hr class="hr-sm" />
-                <p>This informational website and graphic design example was created for a professional audience. The Dark Age Probe website was used as a medium to present a concept study project to the Jet Propulsion Laboratory.
+                <p>This informational website and graphic design example was created for a professional audience. The
+                    Dark Age Probe website was used as a medium to present a concept study project to the Jet Propulsion
+                    Laboratory.
                 </p>
                 <p style="margin-top:15px;">
                     <b>Languages:</b> JavaScript, HTML, CSS<br>
@@ -210,22 +422,29 @@
             </div>
             <!-- Buffer -->
             <div class="col-sm-4">
-                <a data-toggle="modal" data-target="#Buffer"><img class="img-circle img-responsive img-center" src="./images/Buffer_T.png"></a>
+                <a data-toggle="modal" data-target="#Buffer"><img class="img-circle img-responsive img-center"
+                        src="./images/BufferT.png"></a>
                 <h3>General Audience Website</h3>
                 <hr class="hr-sm" />
-                <p>The Riparian Buffers website was designed as an interactive, Adobe Flash-based, informational site created for a general audience. Similar to cartography, this example exhibits large amounts of visual information displayed in a simple, intuitive and minimalistic design.</p>
+                <p>The Riparian Buffers website was designed as an interactive, Adobe Flash-based, informational site
+                    created for a general audience. Similar to cartography, this example exhibits large amounts of
+                    visual information displayed in a simple, intuitive and minimalistic design.</p>
                 <p style="margin-top:15px;">
                     <b>Languages:</b> ActionScript, HTML, CSS<br>
                     <b>Applications:</b> Flash, Photoshop, Dreamweaver
                 </p>
-                <button type="view" class="btn btn-default btn-sm" data-toggle="modal" data-target="#Buffer">View</button>
+                <button type="view" class="btn btn-default btn-sm" data-toggle="modal"
+                    data-target="#Buffer">View</button>
             </div>
             <!-- Coco -->
             <div class="col-sm-4">
-                <a data-toggle="modal" data-target="#Coco"><img class="img-circle img-responsive img-center" src="./images/croc.gif"></a>
+                <a data-toggle="modal" data-target="#Coco"><img class="img-circle img-responsive img-center"
+                        src="./images/croc.gif"></a>
                 <h3>Young Audience Website</h3>
                 <hr class="hr-sm" />
-                <p>An interactive, educational website designed to delight a young audience. Usability considerations for this demographic were incorporated into the design process and include larger buttons, multiple graphic elements, cheerful colors and an adventurous theme.</p>
+                <p>An interactive, educational website designed to delight a young audience. Usability considerations
+                    for this demographic were incorporated into the design process and include larger buttons, multiple
+                    graphic elements, cheerful colors and an adventurous theme.</p>
                 <p style="margin-top:15px;">
                     <b>Languages:</b> ActionScript, HTML, CSS<br>
                     <b>Applications:</b> Flash, Illustrator, Dreamweaver</p>
@@ -241,10 +460,15 @@
                         <h3 class="modal-title">Historic Appalachian Trail</h3>
                     </div>
                     <div class="modal-body">
-                        <a href="./images/AT_Web.png" id="AT_Web"><img src="./images/AT_Web.png" style="width: 100%;"></a>
+                        <a href="./images/AT_Web.png" id="AT_Web"><img src="./images/AT_Web.png"
+                                style="width: 100%;"></a>
                     </div>
                     <div class="modal-footer">
-                        <p align="left">This print map combines the use of contemporary geospatial technologies with historic cartography. The Appalachian Trail is overlaid with a georeferenced copy of the 1957 Landforms of the United States map by Erwin Raisz. This map was created by georeferencing ground control points and graticule interseactions dispayed on Raisz' historical map with a present-day graticule grid.</p>
+                        <p align="left">This print map combines the use of contemporary geospatial technologies with
+                            historic cartography. The Appalachian Trail is overlaid with a georeferenced copy of the
+                            1957 Landforms of the United States map by Erwin Raisz. This map was created by
+                            georeferencing ground control points and graticule interseactions dispayed on Raisz"
+                            historical map with a present-day graticule grid.</p>
                         <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>
                     </div>
                 </div>
@@ -258,10 +482,14 @@
                         <h3 class="modal-title">North American Breweries</h3>
                     </div>
                     <div class="modal-body">
-                        <a href="./images/Breweries_Web.png" id="Breweries_Web"><img src="./images/Breweries_Web.png" style="width: 100%;"></a>
+                        <a href="./images/Breweries_Web.png" id="Breweries_Web"><img src="./images/Breweries_Web.png"
+                                style="width: 100%;"></a>
                     </div>
                     <div class="modal-footer">
-                        <p align="left">A hexagonal binning technique (hexbins), was used to create this high density heatmap. Brewery point location data were aggregated into individual 50-kilometer diameter hexagonal polygons and symbolized according to quantity. Denver, Colorado has the highest density of breweries in North America.</p>
+                        <p align="left">A hexagonal binning technique (hexbins), was used to create this high density
+                            heatmap. Brewery point location data were aggregated into individual 50-kilometer diameter
+                            hexagonal polygons and symbolized according to quantity. Denver, Colorado has the highest
+                            density of breweries in North America.</p>
                         <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>
                     </div>
                 </div>
@@ -275,10 +503,14 @@
                         <h3 class="modal-title">Bus Stop Friendly Berlin</h3>
                     </div>
                     <div class="modal-body">
-                        <a href="./images/Berlin_Web.png" id="Berlin_Web"><img src="./images/Berlin_Web.png" style="width: 100%;"></a>
+                        <a href="./images/Berlin_Web.png" id="Berlin_Web"><img src="./images/Berlin_Web.png"
+                                style="width: 100%;"></a>
                     </div>
                     <div class="modal-footer">
-                        <p align="left">This &frac34; kilometer buffer analysis of bus stop locations displays one of the many excellent public transportation options available within Berlin, Germany. All data, including bus stops, roads, boundaries and water features were downloaded from OpenStreetMap and designed in QGIS.</p>
+                        <p align="left">This &frac34; kilometer buffer analysis of bus stop locations displays one of
+                            the many excellent public transportation options available within Berlin, Germany. All data,
+                            including bus stops, roads, boundaries and water features were downloaded from OpenStreetMap
+                            and designed in QGIS.</p>
                         <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>
                     </div>
                 </div>
@@ -292,10 +524,15 @@
                         <h3 class="modal-title">Tlingit Placename Illustration</h3>
                     </div>
                     <div class="modal-body">
-                        <a href="./images/GE_Web.png" id="GE_Web"><img src="./images/GE_Web.png" style="width: 100%;"></a>
+                        <a href="./images/GE_Web.png" id="GE_Web"><img src="./images/GE_Web.png"
+                                style="width: 100%;"></a>
                     </div>
                     <div class="modal-footer">
-                        <p align="left">Glacier Bay, Alaska is the ancestral homeland of the Huna Tlingit. The Little Ice Age, a geologically recent glacial advance reached its maximum extent in the mid 1700s. The geographical placenames associated with the geology of this landscape are still part of today's Tlingit language. This map was designed as an anthropological research illustration and displays the retreating glacier layered over the current geography of the area.</p>
+                        <p align="left">Glacier Bay, Alaska is the ancestral homeland of the Huna Tlingit. The Little
+                            Ice Age, a geologically recent glacial advance reached its maximum extent in the mid 1700s.
+                            The geographical placenames associated with the geology of this landscape are still part of
+                            today"s Tlingit language. This map was designed as an anthropological research illustration
+                            and displays the retreating glacier layered over the current geography of the area.</p>
                         <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>
                     </div>
                 </div>
@@ -309,10 +546,16 @@
                         <h3 class="modal-title">IPHC Statistical Harvest Data</h3>
                     </div>
                     <div class="modal-body">
-                        <a href="./images/IPHC_Web.png" id="IPHC_Web"> <img src="./images/IPHC_Web.png" style="width: 100%;"></a>
+                        <a href="./images/IPHC_Web.png" id="IPHC_Web"> <img src="./images/IPHC_Web.png"
+                                style="width: 100%;"></a>
                     </div>
                     <div class="modal-footer">
-                        <p align="left">The International Pacific Halibut Commission (IPHC) studies the management of the stocks of Pacific halibut (Hippoglossus stenolepis) within the Convention waters of the United States and Canada. Commercial fishing is still permitted under certain circumstances within Glacier Bay National Park. This screenshot displays an interactive web map developed for the National Park Service that combines both spatial and temporal IPHC statistical harvest data.</p>
+                        <p align="left">The International Pacific Halibut Commission (IPHC) studies the management of
+                            the stocks of Pacific halibut (Hippoglossus stenolepis) within the Convention waters of the
+                            United States and Canada. Commercial fishing is still permitted under certain circumstances
+                            within Glacier Bay National Park. This screenshot displays an interactive web map developed
+                            for the National Park Service that combines both spatial and temporal IPHC statistical
+                            harvest data.</p>
                         <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>
                     </div>
                 </div>
@@ -329,7 +572,12 @@
                         <a href="./images/ER.png" id="ER"> <img src="./images/ER.png" style="width: 100%;"></a>
                     </div>
                     <div class="modal-footer">
-                        <p align="left">The Escalante River Watershed Partnership is of an ongoing collaborative effort of 22 federal agencies and NGOs dedicated to the eradication of invasive species within the Escalante River watershed. This cartographic design example is of a stream buffer analysis designed to assist workers engaged in vegetation treatments within <a target='_blank' href="https://www.blm.gov/programs/national-conservation-lands/utah/grand-staircase-escalante-national-monument">Grand Staircase-Escalante National Monument, Utah</a>.</p>
+                        <p align="left">The Escalante River Watershed Partnership is of an ongoing collaborative effort
+                            of 22 federal agencies and NGOs dedicated to the eradication of invasive species within the
+                            Escalante River watershed. This cartographic design example is of a stream buffer analysis
+                            designed to assist workers engaged in vegetation treatments within <a target="_blank"
+                                href="https://www.blm.gov/programs/national-conservation-lands/utah/grand-staircase-escalante-national-monument">Grand
+                                Staircase-Escalante National Monument, Utah</a>.</p>
                         <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>
                     </div>
                 </div>
@@ -343,10 +591,16 @@
                         <h3 class="modal-title">Grand Staircase - Escalante National Monument Live Weather</h3>
                     </div>
                     <div class="modal-body">
-                        <a href="./images/GSENM_wx.png" id="GSEM_wx"> <img src="./images/GSENM_wx.png" style="width: 100%;"></a>
+                        <a href="./images/GSENM_wx.png" id="GSEM_wx"> <img src="./images/GSENM_wx.png"
+                                style="width: 100%;"></a>
                     </div>
                     <div class="modal-footer">
-                        <p align="left">This live, interactive weather application was designed for the Visitor Information Stations throughout <a target='_blank' href="https://www.blm.gov/programs/national-conservation-lands/utah/grand-staircase-escalante-national-monument">Grand Staircase-Escalante National Monument, Utah</a>. This mashup combines GIS, Monument data, streaming National Weather Service radar data, weather watches, warnings, and public alerts.</p>
+                        <p align="left">This live, interactive weather application was designed for the Visitor
+                            Information Stations throughout <a target="_blank"
+                                href="https://www.blm.gov/programs/national-conservation-lands/utah/grand-staircase-escalante-national-monument">Grand
+                                Staircase-Escalante National Monument, Utah</a>. This mashup combines GIS, Monument
+                            data, streaming National Weather Service radar data, weather watches, warnings, and public
+                            alerts.</p>
                         <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>
                     </div>
                 </div>
@@ -363,7 +617,10 @@
                         <a href="./images/GUA.png" id="GUA"> <img src="./images/GUA.png" style="width: 100%;"></a>
                     </div>
                     <div class="modal-footer">
-                        <p align="left">This interactive map viewer website designed for public use with limited or nonexistent Internet connectivity in rural Alaska. The site provides scalable, detailed information covering a large portion of the state in a manageable and intuitive format. The user can locate and print a desired location targeted to their land use needs.</p>
+                        <p align="left">This interactive map viewer website designed for public use with limited or
+                            nonexistent Internet connectivity in rural Alaska. The site provides scalable, detailed
+                            information covering a large portion of the state in a manageable and intuitive format. The
+                            user can locate and print a desired location targeted to their land use needs.</p>
                         <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>
                     </div>
                 </div>
@@ -380,7 +637,11 @@
                         <a href="./images/Tower.png" id="Tower"> <img src="./images/Tower.png" style="width: 100%;"></a>
                     </div>
                     <div class="modal-footer">
-                        <p align="left">This 3D representation of a developed area within <a target='_blank' href="https://www.nps.gov/yell/index.htm">Yellowstone National Park</a> is one of many building alternative samples included in the planning process to replace a derelict structure. 3D rendering allows planners to conceptually visualize a structure in relationship to the surrounding terrain and adjacent cabins prior to construction.</p>
+                        <p align="left">This 3D representation of a developed area within <a target="_blank"
+                                href="https://www.nps.gov/yell/index.htm">Yellowstone National Park</a> is one of many
+                            building alternative samples included in the planning process to replace a derelict
+                            structure. 3D rendering allows planners to conceptually visualize a structure in
+                            relationship to the surrounding terrain and adjacent cabins prior to construction.</p>
                         <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>
                     </div>
                 </div>
@@ -397,7 +658,9 @@
                         <a href="./images/DAP.png" id="DAP"> <img src="./images/DAP.png" style="width: 100%;"></a>
                     </div>
                     <div class="modal-footer">
-                        <p align="left">This informational website and graphic design example was created for a professional audience. The Dark Age Probe website was used as a medium to present a concept study project to the Jet Propulsion Laboratory.</p>
+                        <p align="left">This informational website and graphic design example was created for a
+                            professional audience. The Dark Age Probe website was used as a medium to present a concept
+                            study project to the Jet Propulsion Laboratory.</p>
                         <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>
                     </div>
                 </div>
@@ -411,10 +674,14 @@
                         <h3 class="modal-title">General Audience Website</h3>
                     </div>
                     <div class="modal-body">
-                        <a href="./images/Buffer.png" id="Buffer"> <img src="./images/Buffer.png" style="width: 100%;"></a>
+                        <a href="./images/Buffer.png" id="Buffer"> <img src="./images/Buffer.png"
+                                style="width: 100%;"></a>
                     </div>
                     <div class="modal-footer">
-                        <p align="left">The Riparian Buffers website was designed as an interactive, Adobe Flash-based, informational site created for a general audience. Similar to cartography, this example exhibits large amounts of visual information displayed in a simple, intuitive and minimalistic design.</p>
+                        <p align="left">The Riparian Buffers website was designed as an interactive, Adobe Flash-based,
+                            informational site created for a general audience. Similar to cartography, this example
+                            exhibits large amounts of visual information displayed in a simple, intuitive and
+                            minimalistic design.</p>
                         <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>
                     </div>
                 </div>
@@ -431,24 +698,17 @@
                         <a href="./images/Coco.png" id="Coco"> <img src="./images/Coco.png" style="width: 100%;"></a>
                     </div>
                     <div class="modal-footer">
-                        <p align="left">An interactive, educational website designed to delight a young audience. Usability considerations for this demographic were incorporated into the design process and include larger buttons, multiple graphic elements, cheerful colors and an adventurous theme.</p>
+                        <p align="left">An interactive, educational website designed to delight a young audience.
+                            Usability considerations for this demographic were incorporated into the design process and
+                            include larger buttons, multiple graphic elements, cheerful colors and an adventurous theme.
+                        </p>
                         <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
         </div>
-
-        <hr class="hr-hide" />
-        <hr style="margin-bottom: 0px;" id="contact"> </div>
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="col-sm-12" style="font-size: 10px">
-                <p>Copyright &copy; <a target='_blank' href="https://efano.github.io/">2016 Lis Fano</a></p>
-            </div>
-        </div>
-    </footer>
     </div>
+
     <!-- Javascript -->
     <script src="./js/jquery-2.2.3.min.js"></script>
     <script src="./js/bootstrap.js"></script>
