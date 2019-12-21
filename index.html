@@ -11,6 +11,121 @@
     <link href="./css/bootstrap.css" rel="stylesheet">
     <link href="./css/font-awesome.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    <style>
+        .carousel-fade .carousel-inner .item {
+            opacity: 0;
+            transition-property: opacity;
+        }
+
+        .carousel-fade .carousel-inner .active {
+            opacity: 1;
+        }
+
+        .carousel-fade .carousel-inner .active.left,
+        .carousel-fade .carousel-inner .active.right {
+            left: 0;
+            opacity: 0;
+            z-index: 1;
+        }
+
+        .carousel-fade .carousel-inner .next.left,
+        .carousel-fade .carousel-inner .prev.right {
+            opacity: 1;
+        }
+
+        .carousel-fade .carousel-control {
+            z-index: 2;
+        }
+
+        @media all and (transform-3d),
+        (-webkit-transform-3d) {
+
+            .carousel-fade .carousel-inner>.item.next,
+            .carousel-fade .carousel-inner>.item.active.right {
+                opacity: 0;
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+            }
+
+            .carousel-fade .carousel-inner>.item.prev,
+            .carousel-fade .carousel-inner>.item.active.left {
+                opacity: 0;
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+            }
+
+            .carousel-fade .carousel-inner>.item.next.left,
+            .carousel-fade .carousel-inner>.item.prev.right,
+            .carousel-fade .carousel-inner>.item.active {
+                opacity: 1;
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+            }
+        }
+
+        .carousel-control.left {
+            background: none;
+        }
+
+        .carousel-control.right {
+            background: none;
+        }
+
+        .carousel-control {
+            position: absolute;
+            top: 86%;
+            bottom: 0;
+            left: 0;
+            width: 15%;
+            font-size: auto;
+            color: #fff;
+            text-align: center;
+            opacity: 1;
+            text-shadow: none;
+        }
+
+        .carousel-control:hover {
+            color: #fff;
+        }
+
+        .carousel-indicators {
+            bottom: -4px;
+        }
+
+        .carousel-indicators li {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin: 1px;
+            text-indent: -999px;
+            cursor: pointer;
+            background-color: #000\9;
+            background-color: rgba(0, 0, 0, 0);
+            border: 1px solid #fff;
+            border-radius: 50%;
+        }
+
+        .carousel-indicators .active {
+            width: 12px;
+            height: 12px;
+            margin: 0;
+            background-color: #fff;
+        }
+
+        .carousel-caption {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 10;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            color: #fff;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.4);
+        }
+    </style>
 </head>
 
 <body>
@@ -33,6 +148,7 @@
             </div>
         </div>
         <div class="row">
+
             <!-- Fatal Journeys -->
             <div class="col-sm-4">
                 <a target="_blank" href="https://efano.github.io/global-migrant-deaths/migrant-deaths.html"><img
@@ -51,13 +167,12 @@
                         href="https://github.com/efano/global-migrant-deaths/blob/master/migrant-deaths.html">Github</a>.
                 </p>
                 <p style="margin-top:15px;"><b>Languages:</b> JavaScript, HTML, CSS
-                    <br><b>Libraries:</b> Mapbox GL JS, D3.js
+                    <br><b>Libraries:</b> Mapbox GL JS, D3.js, Turf.js, Assembly.css
                     <br><b>Data Sources: </b><a target="_blank" href="https://missingmigrants.iom.int/downloads">Missing
-                        Migrant Project</a></p><a type="view" target="_blank"
-                    href="https://efano.github.io/global-migrant-deaths/migrant-deaths.html"
-                    class="btn btn-default btn-sm" role="button">View
-                    Web Map</a>
+                        Migrant Project</a>
+                </p>
             </div>
+
             <!-- Coastal Vulnerability -->
             <div class="col-sm-4">
                 <a target="_blank" href="https://efano.github.io/coastal-vulnerability/"><img
@@ -82,9 +197,8 @@
                     <a target="_blank"
                         href="https://www.usgs.gov/core-science-systems/ngp/board-on-geographic-names/download-gnis-data">U.S.
                         Board on
-                        Geographic Names</a></p><a type="view" target="_blank"
-                    href="https://efano.github.io/coastal-vulnerability/" class="btn btn-default btn-sm"
-                    role="button">View Web Map</a>
+                        Geographic Names</a>
+                </p>
             </div>
 
             <!-- NZ Invasive Water Buttercup -->
@@ -96,7 +210,8 @@
                 <hr class="hr-sm" />
                 <p>Node.js is an open-source, JavaScript framework that executes JavaScript code outside of a browser.
                     This project uses Node and npm to load and process data including reading, parsing and writing JSON
-                    system files used to create and structure the data used in the web map. A coordinated legend and data
+                    system files used to create and structure the data used in the web map. A coordinated legend and
+                    data
                     layer visualization, along with point aggregation using the Leaflet marker
                     cluster plugin are also demonstrated. The code for this web map can be viewed on <a target="_blank"
                         href="https://github.com/efano/invasive-water-buttercup/blob/master/README.md">Github</a>. </p>
@@ -106,14 +221,54 @@
                         href="https://datafinder.stats.govt.nz/search/?q=statsnzregional-council-2015-v1-00-clipped-SHP">
                         Stats NZ </a>and
                     <a target="_blank" href="https://data.mfe.govt.nz/layer/52742-freshwater-pests-water-buttercup/">MfE
-                        Data Service</a></p> <a type="view" target="_blank"
-                    href="https://efano.github.io/invasive-water-buttercup/" class="btn btn-default btn-sm"
-                    role="button">View
-                    Web Map</a>
+                        Data Service</a>
+                </p>
             </div>
         </div>
         <hr class="hr-hide" />
         <div class="row">
+
+            <!-- Humboldt Depletion -->
+            <div class="col-sm-4">
+                <a data-toggle="modal" data-target="#HBCQT"><img class="img-circle img-responsive img-center"
+                        src="./images/hbT.jpg" alt="Humboldt Capture Query Tool"></a>
+                <h3>Humboldt Capture Query Tool</h3>
+                <hr class="hr-sm" />
+                <p>The Humboldt Capture Query Tool was developed as part of a <a target="_blank"
+                        href="https://nevada.usgs.gov/humboldtdepletion/index.html">USGS research project</a> to
+                    visualize
+                    modeled location-based streamflow
+                    depletion within Nevada's Humboldt River Basin. The interactive, 3-step tool provides the Nevada
+                    State Engineer and stakeholders the information needed to understand and evaluate the potential
+                    effects of groundwater withdrawals within the basin and processes related to the interaction between
+                    groundwater and surface water.
+                </p>
+                <p style="margin-top:15px;"><b>Languages:</b> JavaScript, HTML, CSS, SQL
+                    <br><b>Libraries:</b> Leaflet, D3.js, C3.js, Node.js, Turf.js, jQuery, Bootstrap, Airship
+                    <br><b>Data Sources: </b><a target="_blank" href="https://www.usgs.gov/centers/nv-water">USGS
+                        Nevada Water Science Center</a>
+                </p>
+            </div>
+
+            <!-- Field trips -->
+            <div class="col-sm-4">
+                <a data-toggle="modal" data-target="#fieldtrips"><img class="img-circle img-responsive img-center"
+                        src="./images/fieldtripsT.png" alt="Field Trip Visualization Tool"></a>
+                <h3>Field Trip Visualization Tool</h3>
+                <hr class="hr-sm" />
+                <p>The Field Trip Visualization Tool is a nationwide, internal USGS application designed to assist
+                    managers and their employees in field trip planning. The tool queries data from a national database
+                    via multiple APIs and filters and aggregates site locations by field office. Site locations are
+                    color-coded by field trip, and selectable through the use of an interactive legend. A site location
+                    popup links to additional websites for convientent access to additional, detained site information.
+                </p>
+                <p style="margin-top:15px;"><b>Languages:</b> JavaScript, HTML, CSS
+                    <br><b>Libraries:</b> Leaflet, jQuery, Lodash
+                    <br><b>Data Sources: </b><a target="_blank" href="https://www.usgs.gov/centers/nv-water">USGS
+                        Nevada Water Science Center</a>
+                </p>
+            </div>
+
             <!-- IPHC Setline Surveys -->
             <div class="col-sm-4">
                 <a target="_blank" href="https://efano.github.io/iphc_survey_map/"><img
@@ -128,13 +283,14 @@
                     and include total count and weight of fish at each survey station. The code for this web map can be
                     viewed on <a target="_blank" href="https://github.com/efano/iphc_survey_map">Github</a>.</p>
                 <p style="margin-top:15px;"><b>Languages:</b> JavaScript, HTML, CSS
-                    <br><b>Applications:</b> QGIS, ArcMap, KNIME, Illustrator
-                    <br><b>Libraries:</b> Mapbox, Leaflet, jQuery, jQuery Sparklines
+                    <br><b>Libraries:</b> Mapbox, Leaflet, jQuery
                     <br><b>Data Sources: </b><a target="_blank" href="http://www.iphc.int/">International Pacific
-                        Halibut Commission</a></p><a type="view" target="_blank"
-                    href="https://efano.github.io/iphc_survey_map/" class="btn btn-default btn-sm" role="button">View
-                    Web Map</a>
+                        Halibut Commission</a>
+                </p>
             </div>
+        </div>
+        <hr class="hr-hide" />
+        <div class="row">
             <!-- Kenya Education -->
             <div class="col-sm-4">
                 <a target="_blank" href="https://efano.github.io/kenyan_education_map/"><img
@@ -149,11 +305,10 @@
                     gender. The code for this web map can be viewed on <a target="_blank"
                         href="https://github.com/efano/kenyan_education_map/blob/master/index.html">Github</a>.</p>
                 <p style="margin-top:15px;"><b>Languages:</b> JavaScript, HTML, CSS
-                    <br><b>Applications:</b> Illustrator, Excel
                     <br><b>Libraries:</b> Mapbox, Leaflet, jQuery
                     <br><b>Data Sources: </b><a target="_blank" href="https://opendata.go.ke/">Kenya Open Data Portal
-                    </a></p><a type="view" target="_blank" href="https://efano.github.io/kenyan_education_map/"
-                    class="btn btn-default btn-sm" role="button">View Web Map</a>
+                    </a>
+                </p>
             </div>
             <!-- Power Plants -->
             <div class="col-sm-4">
@@ -171,9 +326,25 @@
                 <p style="margin-top:15px;"><b>Languages:</b> JavaScript, HTML, CSS
                     <br><b>Libraries:</b> Leaflet
                     <br><b>Data Sources: </b><a target="_blank" href="https://www.eia.gov/electricity/data/eia923/">U.S.
-                        Energy Information Administration</a></p> <a type="view" target="_blank"
-                    href="https://efano.github.io/bi-variate-prop/" class="btn btn-default btn-sm" role="button">View
-                    Web Map</a>
+                        Energy Information Administration</a>
+                </p>
+            </div>
+            <!-- IPHC -->
+            <div class="col-sm-4">
+                <a data-toggle="modal" data-target="#IPHC_Web"><img class="img-circle img-responsive img-center"
+                        src="./images/IPHC_T.png"></a>
+                <h3>IPHC Statistical Harvest Data</h3>
+                <hr class="hr-sm" />
+                <p>The <a target="_blank" href="http://www.iphc.int/">International Pacific Halibut Commission</a>
+                    (IPHC) studies the management of the stocks of Pacific halibut within the
+                    Convention waters of the United States and Canada. Commercial fishing is still permitted under
+                    certain circumstances within Glacier Bay National Park. This screenshot displays an interactive web
+                    map developed for the National Park Service that combines both spatial and temporal IPHC statistical
+                    harvest data.</p>
+                <p style="margin-top:15px;"><b>Languages:</b> ActionScript, JavaScript, HTML, CSS
+                    <br><b>Data Sources: </b><a target="_blank" href="http://www.iphc.int/">International Pacific
+                        Halibut Commission</a>
+                </p>
             </div>
         </div>
         <hr class="hr-hide" />
@@ -187,14 +358,14 @@
                 <h3>The Digital Nomad Map</h3>
                 <hr class="hr-sm" />
                 <p>A playful CARTO map that displays the result of a nationwide, ten linear mile proximity analysis
-                    between public campgrounds and public libraries. In this analysis a maximum ten-mile linear hub-line
+                    between public campgrounds and public libraries. In this analysis a maximum ten-mile linear
+                    hub-line
                     feature is included to quickly visualize the nearest campground-to-library relationship.</p>
                 <p style="margin-top:15px;"><b>Languages:</b> JavaScript, HTML, CSS, SQL
-                    <br><b>Applications:</b> QGIS, KNIME, CARTO
-                    <br><b>Data Sources: </b><a target="_blank" href="http://www.poi-factory.com/">POI Factory</a> and
-                    <a target="_blank" href="http://www.uscampgrounds.info/">USACAmpgrounds</a></p><a type="view"
-                    target="_blank" href="https://lisfano.carto.com/viz/84dde768-34d1-11e6-bdbe-0e674067d321/public_map"
-                    class="btn btn-default btn-sm" role="button">View Web Map</a>
+                    <br><b>Data Sources: </b><a target="_blank" href="http://www.poi-factory.com/">POI Factory</a>
+                    and
+                    <a target="_blank" href="http://www.uscampgrounds.info/">USACAmpgrounds</a>
+                </p>
             </div>
             <!-- Greenhouse Gases -->
             <div class="col-sm-4">
@@ -208,12 +379,10 @@
                     in addition to summarized GHG totals per square kilometer by state. Both choropleth and graduated
                     symbology were used to display these data.</p>
                 <p style="margin-top:15px;"><b>Languages:</b> JavaScript, HTML, CSS, SQL
-                    <br><b>Applications:</b> QGIS, CARTO
                     <br><b>Data Sources: </b><a target="_blank"
                         href="https://www.epa.gov/ghgreporting/ghg-reporting-program-data-sets">US Environmental
-                        Protection Agency</a></p><a type="view" target="_blank"
-                    href="https://lisfano.carto.com/viz/6c7c948a-2fe0-11e6-bdfa-0e674067d321/public_map"
-                    class="btn btn-default btn-sm" role="button">View Web Map</a>
+                        Protection Agency</a>
+                </p>
             </div>
             <!-- Cancer Mortality -->
             <div class="col-sm-4">
@@ -226,13 +395,11 @@
                     (2008-2012) by county. The data were downloaded from the National Cancer Institute and displayed as
                     a choropleth map where mortality rate is averaged per 100,000 residents.</p>
                 <p style="margin-top:15px;"><b>Languages:</b> JavaScript, HTML, CSS, SQL
-                    <br><b>Applications:</b> QGIS, CARTO
                     <br><b>Data Sources: </b><a target="_blank"
-                        href="https://www.statecancerprofiles.cancer.gov/">National Cancer Institute</a></p><a
-                    type="view" target="_blank"
-                    href="https://lisfano.carto.com/viz/d85f0bbc-2a84-11e6-aa26-0e31c9be1b51/public_map"
-                    class="btn btn-default btn-sm" role="button">View Web Map</a>
+                        href="https://www.statecancerprofiles.cancer.gov/">National Cancer Institute</a>
+                </p>
             </div>
+
         </div>
         <hr class="hr-hide" />
         <div class="row">
@@ -248,14 +415,13 @@
                         href="https://en.wikipedia.org/wiki/Erwin_Raisz">Erwin Raisz</a>. This map was created by
                     georeferencing ground control points and graticule interseactions dispayed on Raisz" historical map
                     with a present-day graticule grid. </p>
-                <p style="margin-top:15px;"><b>Application:</b> QGIS
-                    <br><b>Data Sources: </b><a target="_blank"
+                <p style="margin-top:15px;">
+                    <b>Data Sources: </b><a target="_blank"
                         href="http://www.davidrumsey.com/luna/servlet/detail/RUMSEY~8~1~231095~5508485:United-States----Physical-Landforms?sort=Pub_List_No_InitialSort%2CPub_Date%2CPub_List_No%2CSeries_No&qvq=q:erwin%2Braisz%2Blandforms%2Bof%2Bthe%2Bunited%2Bstates;sort:Pub_List_No_InitialSort%2CPub_Date%2CPub_List_No%2CSeries_No;lc:RUMSEY~8~1&mi=1&trs=7">David
                         Rumsey Map Collection</a>, <a target="_blank"
                         href="http://www.appalachiantrail.org/">Appalachian Trail Conservancy</a> and <a target="_blank"
-                        href="http://www.naturalearthdata.com/">Natural Earth</a></p>
-                <button type="view" class="btn btn-default btn-sm" data-toggle="modal" data-target="#AT_Web">View
-                    Map</button>
+                        href="http://www.naturalearthdata.com/">Natural Earth</a>
+                </p>
             </div>
             <!-- Berlin -->
             <div class="col-sm-4">
@@ -266,12 +432,9 @@
                 <p>This &frac34; kilometer buffer analysis of bus stop locations displays one of the many excellent
                     public transportation options available within Berlin, Germany. All data, including bus stops,
                     roads, boundaries and water features were downloaded from OpenStreetMap and designed in QGIS.</p>
-                <p style="margin-top:15px;"><b>Applications:</b> QGIS utilizing SQLight (SpatiaLite) database,
-                    OpenStreetMap
-                    <br><b>Data Sources: </b><a target="_blank" href="https://www.openstreetmap.org/">OpenStreetMap</a>
+                <p style="margin-top:15px;">
+                    <b>Data Sources: </b><a target="_blank" href="https://www.openstreetmap.org/">OpenStreetMap</a>
                 </p>
-                <button type="view" class="btn btn-default btn-sm" data-toggle="modal" data-target="#Berlin_Web">View
-                    Map</button>
             </div>
             <!-- Breweries -->
             <div class="col-sm-4">
@@ -283,34 +446,13 @@
                     location data were aggregated into individual 50-kilometer diameter hexagonal polygons and
                     symbolized according to quantity. Denver, Colorado has the highest density of breweries in North
                     America.</p>
-                <p style="margin-top:15px;"><b>Applications:</b> QGIS, Photoshop
-                    <br><b>Data Sources: </b><a target="_blank" href="http://www.poi-factory.com/">POI Factory</a></p>
-                <button type="view" class="btn btn-default btn-sm" data-toggle="modal" data-target="#Breweries_Web">View
-                    Map</button>
+                <p style="margin-top:15px;"><b>Data Sources: </b><a target="_blank" href="http://www.poi-factory.com/">POI Factory</a>
+                </p>
             </div>
         </div>
         <hr class="hr-hide" />
-        <div class="row">
-            <!-- IPHC -->
-            <div class="col-sm-4">
-                <a data-toggle="modal" data-target="#IPHC_Web"><img class="img-circle img-responsive img-center"
-                        src="./images/IPHC_T.png"></a>
-                <h3>IPHC Statistical Harvest Data</h3>
-                <hr class="hr-sm" />
-                <p>The <a target="_blank" href="http://www.iphc.int/">International Pacific Halibut Commission</a>
-                    (IPHC) studies the management of the stocks of Pacific halibut (Hippoglossus stenolepis) within the
-                    Convention waters of the United States and Canada. Commercial fishing is still permitted under
-                    certain circumstances within Glacier Bay National Park. This screenshot displays an interactive web
-                    map developed for the National Park Service that combines both spatial and temporal IPHC statistical
-                    harvest data.</p>
-                <p style="margin-top:15px;"><b>Languages:</b> ActionScript, JavaScript, HTML, CSS
-                    <br><b>Applications:</b> ArcMap, ArcGIS Viewer for Flex
-                    <br><b>Data Sources: </b><a target="_blank" href="http://www.iphc.int/">International Pacific
-                        Halibut Commission</a></p>
-                <button type="view" class="btn btn-default btn-sm" data-toggle="modal" data-target="#IPHC_Web">View
-                    Map</button>
-            </div>
-            <!-- GSENM radar -->
+        <!-- <div class="row">
+            
             <div class="col-sm-4">
                 <a data-toggle="modal" data-target="#GSENM_wx"><img class="img-circle img-responsive img-center"
                         src="./images/GSENM_wx_T.png"></a>
@@ -319,16 +461,15 @@
                 <p>This live, interactive weather application was designed for the Visitor Information Stations
                     throughout <a target="_blank"
                         href="https://www.blm.gov/programs/national-conservation-lands/utah/grand-staircase-escalante-national-monument">Grand
-                        Staircase-Escalante National Monument, Utah</a>. This mashup combines GIS, Monument data,
+                        Staircase-Escalante National Monument, Utah</a>. This application hybrid combines GIS, Monument data,
                     streaming National Weather Service radar data, weather watches, warnings, and public alerts.</p>
                 <p style="margin-top:15px;"><b>Languages:</b> JavaScript, HTML, CSS
                     <br><b>Applications:</b> ArcMap
                     <br><b>Data Sources: </b><a target="_blank" href="https://www.weather.gov/">National Weather
-                        Service</a></p>
-                <button type="view" class="btn btn-default btn-sm" data-toggle="modal" data-target="#GSENM_wx">View
-                    Map</button>
+                        Service</a>
+                </p>
             </div>
-            <!-- GUA -->
+            
             <div class="col-sm-4">
                 <a data-toggle="modal" data-target="#GUA"><img class="img-circle img-responsive img-center"
                         src="./images/GUA_T.png"></a>
@@ -340,14 +481,13 @@
                     location targeted to their land use needs.</p>
                 <p style="margin-top:15px;"><b>Languages:</b> ActionScript, JavaScript, HTML,
                     CSS<br><b>Applications:</b> ArcMap, Photoshop, Flash<br><b>Data Sources: </b><a target="_blank"
-                        href="https://www.blm.gov/">Bureau of Land Management</a></p>
-                <button type="view" class="btn btn-default btn-sm" data-toggle="modal" data-target="#GUA">View
-                    Map</button>
+                        href="https://www.blm.gov/">Bureau of Land Management</a>
+                </p>
             </div>
         </div>
-        <hr class="hr-hide" />
-        <div class="row">
-            <!-- Tower -->
+        <hr class="hr-hide" /> -->
+        <!-- <div class="row">
+            
             <div class="col-sm-4">
                 <a data-toggle="modal" data-target="#Tower"><img class="img-circle img-responsive img-center"
                         src="./images/Tower_T.png"></a>
@@ -362,11 +502,10 @@
                 <p style="margin-top:15px;">
                     <b>Applications:</b> ArcScene, ArcMap
                     <br><b>Data Sources: </b><a target="_blank" href="https://www.nps.gov/yell/index.htm">National Park
-                        Service</a></p>
-                <button type="view" class="btn btn-default btn-sm" data-toggle="modal"
-                    data-target="#Tower">View</button>
+                        Service</a>
+                </p>
             </div>
-            <!-- Escalante River Watershed -->
+            
             <div class="col-sm-4">
                 <a data-toggle="modal" data-target="#ER"><img class="img-circle img-responsive img-center"
                         src="./images/ERT.png"></a>
@@ -381,10 +520,8 @@
                 <p style="margin-top:15px;"><b>Applications:</b> ArcMap
                     <br><b>Data Sources: </b><a target="_blank" href="https://www.blm.gov">Bureau of Land Management</a>
                 </p>
-                <button type="view" class="btn btn-default btn-sm" data-toggle="modal" data-target="#ER">View
-                    Map</button>
             </div>
-            <!-- Tlingit Placenames-->
+            
             <div class="col-sm-4">
                 <a data-toggle="modal" data-target="#GE_Web"><img class="img-circle img-responsive img-center"
                         src="./images/GE_T.png"></a>
@@ -397,14 +534,13 @@
                     research illustration and displays the retreating glacier layered over the current geography of the
                     area.</p>
                 <p style="margin-top:15px;"><b>Applications:</b> ArcMap, Photoshop<br><b>Data Sources: </b><a
-                        target="_blank" href="https://www.nps.gov/glba/index.htm">National Park Service</a></p>
-                <button type="view" class="btn btn-default btn-sm" data-toggle="modal" data-target="#GE_Web">View
-                    Map</button>
+                        target="_blank" href="https://www.nps.gov/glba/index.htm">National Park Service</a>
+                </p>
             </div>
-        </div>
-        <hr class="hr-hide" />
-        <div class="row">
-            <!-- DAP -->
+        </div> -->
+        <!-- <hr class="hr-hide" /> -->
+        <!-- <div class="row">
+            
             <div class="col-sm-4">
                 <a data-toggle="modal" data-target="#DAP"><img class="img-circle img-responsive img-center"
                         src="./images/DAP_T.png"></a>
@@ -418,9 +554,8 @@
                     <b>Languages:</b> JavaScript, HTML, CSS<br>
                     <b>Applications:</b> AutoCAD, Photoshop, Dreamweaver
                 </p>
-                <button type="view" class="btn btn-default btn-sm" data-toggle="modal" data-target="#DAP">View</button>
             </div>
-            <!-- Buffer -->
+            
             <div class="col-sm-4">
                 <a data-toggle="modal" data-target="#Buffer"><img class="img-circle img-responsive img-center"
                         src="./images/BufferT.png"></a>
@@ -433,10 +568,8 @@
                     <b>Languages:</b> ActionScript, HTML, CSS<br>
                     <b>Applications:</b> Flash, Photoshop, Dreamweaver
                 </p>
-                <button type="view" class="btn btn-default btn-sm" data-toggle="modal"
-                    data-target="#Buffer">View</button>
             </div>
-            <!-- Coco -->
+            
             <div class="col-sm-4">
                 <a data-toggle="modal" data-target="#Coco"><img class="img-circle img-responsive img-center"
                         src="./images/croc.gif"></a>
@@ -444,14 +577,135 @@
                 <hr class="hr-sm" />
                 <p>An interactive, educational website designed to delight a young audience. Usability considerations
                     for this demographic were incorporated into the design process and include larger buttons, multiple
-                    graphic elements, cheerful colors and an adventurous theme.</p>
+                    graphic elements, cheerful colors and an adventurous theme.
+                </p>
                 <p style="margin-top:15px;">
                     <b>Languages:</b> ActionScript, HTML, CSS<br>
-                    <b>Applications:</b> Flash, Illustrator, Dreamweaver</p>
-                <button type="view" class="btn btn-default btn-sm" data-toggle="modal" data-target="#Coco">View</button>
+                    <b>Applications:</b> Flash, Illustrator, Dreamweaver
+                </p>
+            </div>
+        </div> -->
+        <!-- Modals -->
+        <!-- Humboldt -->
+        <div class="modal fade" id="HBCQT" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h3 class="modal-title">Humboldt Capture Query Tool</h3>
+                    </div>
+                    <div id="myCarousel" class="carousel slide carousel-fade" data-interval="false"
+                        data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                            <li data-target="#myCarousel" data-slide-to="4"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="./images/hb1.jpg" alt="image 1" style="width:100%;">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <p>A three-step process</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="./images/hb2.jpg" alt="image 2" style="width:100%;">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <p>Step 1: Select a location by either clicking on the map or <br> by entering
+                                        coordinates in the text boxes</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="./images/hb3.jpg" alt="image 3" style="width:100%;">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <p>Step 2: Enter the desired depth below surface in the text box</p>
+                                    <p>Step 3: Using the range slider, select the number of years of pumping</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="./images/hb4.jpg" alt="image 4" style="width:100%;">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <p>Select the Results button</p>
+                                    <p>User inputs are queried and a report is created as a side panel</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="./images/hb5.jpg" alt="image 5" style="width:100%;">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <p>The report is fully interactive and can be printed</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- Modals -->
+        <!-- Field Trips -->
+        <div class="modal fade" id="fieldtrips" tabindex="-1">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h3 class="modal-title">Field Trip Visualization Tool</h3>
+                    </div>
+                    <div id="tripCarousel" class="carousel slide carousel-fade" data-interval="false"
+                        data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#tripCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#tripCarousel" data-slide-to="1"></li>
+                            <li data-target="#tripCarousel" data-slide-to="2"></li>
+                            <li data-target="#tripCarousel" data-slide-to="3"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="./images/trips1.jpg" alt="image 1" style="width:100%;">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <p>Select a USGS Water Science Center <br>to filter the national dataset</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="./images/trips2.jpg" alt="image 2" style="width:100%;">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <p>Select a USGS field office to further filter data</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="./images/trips3.jpg" alt="image 3" style="width:100%;">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <p>Field trip site locations are aggregated by color</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="./images/trips4.jpg" alt="image 4" style="width:100%;">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <p>Individual site locations are fully interactive</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a class="left carousel-control" href="#tripCarousel" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#tripCarousel" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="modal fade" id="AT_Web" tabindex="-1">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
@@ -598,7 +852,8 @@
                         <p align="left">This live, interactive weather application was designed for the Visitor
                             Information Stations throughout <a target="_blank"
                                 href="https://www.blm.gov/programs/national-conservation-lands/utah/grand-staircase-escalante-national-monument">Grand
-                                Staircase-Escalante National Monument, Utah</a>. This mashup combines GIS, Monument
+                                Staircase-Escalante National Monument, Utah</a>. This application hybrid combines GIS,
+                            Monument
                             data, streaming National Weather Service radar data, weather watches, warnings, and public
                             alerts.</p>
                         <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>
@@ -707,6 +962,7 @@
                 </div>
             </div>
         </div>
+        <hr id="projects" />
     </div>
 
     <!-- Javascript -->
