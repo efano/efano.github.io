@@ -1489,7 +1489,9 @@ img {
 
 .img-circle:hover {
     border: 2px solid #666;
-
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 hr {
