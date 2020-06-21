@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Lis Fano Portfolio" content="Lis Fano Portfolio">
-    <title>Lis Fano Portfolio</title>
+    <title>Lis Fano</title>
     <!-- CSS -->
     <link href="./css/bootstrap.css" rel="stylesheet">
     <link href="./css/font-awesome.css" rel="stylesheet">
@@ -100,7 +100,7 @@
             margin: 1px;
             text-indent: -999px;
             cursor: pointer;
-            background-color: #000\9;
+            background-color: #000;
             background-color: rgba(0, 0, 0, 0);
             border: 1px solid #fff;
             border-radius: 50%;
@@ -125,6 +125,24 @@
             text-align: center;
             background: rgba(0, 0, 0, 0.4);
         }
+
+        #email {
+            float: right;
+            padding-top: 10px;
+        }
+
+        @media (max-width: 767px) {
+            #email {
+                float: left;
+                padding-top: 0px;
+                margin-top: -8px;
+                padding-bottom: 6px;
+            }
+
+            .container {
+                padding-top: 10px;
+            }
+        }
     </style>
 </head>
 
@@ -132,11 +150,11 @@
     <!-- Navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
-            <div class="navbar-header"><a target="_blank" href="https://github.com/efano" class="navbar-brand">LIS
+            <div class="navbar-header">
+                <a target="_blank" href="https://github.com/efano" class="navbar-brand">LIS
                     FANO</a>
-
             </div>
-
+            <span id="email">lisfano@gmail.com</span>
         </div>
     </nav>
     <!-- Featured Projects -->
@@ -147,7 +165,35 @@
                 <h1>Featured Projects</h1>
             </div>
         </div>
-        <div class="row">
+
+        <div class="row" id="row1">
+            <!-- GNP -->
+            <div class="col-sm-4">
+                <a target="_blank" href="https://efano.github.io/GNP-glaciers/index.html"><img
+                        class="img-circle img-responsive img-center" src="./images/glaciersT.jpg"
+                        alt="Our vanishing glaciers"></a>
+                <h3>Our Vanishing Glaciers</h3>
+                <hr class="hr-sm" />
+                <p>Over 150 alpine glaciers existed in <a target="_blank" href="https://www.nps.gov/glac/index.htm">
+                        Glacier National Park,</a> Montana (NPS) at the end of the Little Ice Age. In 1966, the park had
+                    35 named glaciers large enough to be considered active. By
+                    2015, only 26 of those glaciers remained. The <a target="_blank"
+                        href="https://www.usgs.gov/centers/norock/science/retreat-glaciers-glacier-national-park?qt-science_center_objects=0#qt-science_center_objects">
+                        United States Geological Survey (USGS)</a> has been documenting glacial area loss since 1966.
+                    This web mapping project integrates these digitized glacier areas, displays them interactively, and
+                    combines them with local climate data. The application is designed to provide an interactive web
+                    experience that visualizes the decrease in
+                    glacier extent over time.
+                </p>
+                <p style="margin-top:15px;"><b>Languages:</b> JavaScript, Python, HTML, and CSS
+                    <br><b>Libraries:</b> Leaflet, D3.js, jQuery, Assembly.css,
+                    <br><b>Data Sources: </b><a target="_blank"
+                        href="https://www.usgs.gov/centers/norock/science/retreat-glaciers-glacier-national-park?qt-science_center_objects=0#qt-science_center_objects">USGS,</a>
+                    <a target="_blank" href="https://www.nps.gov/glac/index.htm"> NPS,</a><a target="_blank"
+                        href="http://glaciers.us/image-galleries/lewis-range-mt.html"> Portland State University,</a>
+                    <a target="_blank" href="http://prism.oregonstate.edu/"> Oregon State University Parameter-elevation Regressions on Independent Slopes Model (PRISM)</a>
+                </p>
+            </div>
 
             <!-- Humboldt Depletion -->
             <div class="col-sm-4">
@@ -189,29 +235,11 @@
                         Nevada Water Science Center</a>
                 </p>
             </div>
-
-            <!-- IPHC Setline Surveys -->
-            <div class="col-sm-4">
-                <a target="_blank" href="https://efano.github.io/iphc_survey_map/"><img
-                        class="img-circle img-responsive img-center" src="./images/IPHCS_T.png"
-                        alt="An IPHC survey map"></a>
-                <h3>IPHC Setline Surveys</h3>
-                <hr class="hr-sm" />
-                <p>The <a target="_blank" href="http://www.iphc.int/">International Pacific Halibut Commission
-                        (IPHC)</a> conducts annual surveys that collect standardized data used for halibut stock
-                    assessment. This interactive web map displays the station locations and regulatory areas where the
-                    annual setline surveys occur. The data used in this exploratory analysis are from 1998 through 2015,
-                    and include total count and weight of fish at each survey station. The code for this web map can be
-                    viewed on <a target="_blank" href="https://github.com/efano/iphc_survey_map">Github</a>.</p>
-                <p style="margin-top:15px;"><b>Languages:</b> JavaScript, HTML, CSS
-                    <br><b>Libraries:</b> Mapbox, Leaflet, jQuery
-                    <br><b>Data Sources: </b><a target="_blank" href="http://www.iphc.int/">International Pacific
-                        Halibut Commission</a>
-                </p>
-            </div>
         </div>
+
+
         <hr class="hr-hide" />
-        <div class="row">
+        <div class="row" id="row2">
 
             <!-- Fatal Journeys -->
             <div class="col-sm-4">
@@ -234,6 +262,26 @@
                     <br><b>Libraries:</b> Mapbox GL JS, D3.js, Turf.js, Assembly.css
                     <br><b>Data Sources: </b><a target="_blank" href="https://missingmigrants.iom.int/downloads">Missing
                         Migrant Project</a>
+                </p>
+            </div>
+
+            <!-- IPHC Setline Surveys -->
+            <div class="col-sm-4">
+                <a target="_blank" href="https://efano.github.io/iphc_survey_map/"><img
+                        class="img-circle img-responsive img-center" src="./images/IPHCS_T.png"
+                        alt="An IPHC survey map"></a>
+                <h3>IPHC Setline Surveys</h3>
+                <hr class="hr-sm" />
+                <p>The <a target="_blank" href="http://www.iphc.int/">International Pacific Halibut Commission
+                        (IPHC)</a> conducts annual surveys that collect standardized data used for halibut stock
+                    assessment. This interactive web map displays the station locations and regulatory areas where the
+                    annual setline surveys occur. The data used in this exploratory analysis are from 1998 through 2015,
+                    and include total count and weight of fish at each survey station. The code for this web map can be
+                    viewed on <a target="_blank" href="https://github.com/efano/iphc_survey_map">Github</a>.</p>
+                <p style="margin-top:15px;"><b>Languages:</b> JavaScript, HTML, CSS
+                    <br><b>Libraries:</b> Mapbox, Leaflet, jQuery
+                    <br><b>Data Sources: </b><a target="_blank" href="http://www.iphc.int/">International Pacific
+                        Halibut Commission</a>
                 </p>
             </div>
 
@@ -264,7 +312,11 @@
                         Geographic Names</a>
                 </p>
             </div>
+        </div>
 
+        <hr class="hr-hide" />
+
+        <div class="row" id="row3">
             <!-- NZ Invasive Water Buttercup -->
             <div class="col-sm-4">
                 <a target="_blank" href="https://efano.github.io/invasive-water-buttercup/"><img
@@ -288,9 +340,7 @@
                         Data Service</a>
                 </p>
             </div>
-        </div>
-        <hr class="hr-hide" />
-        <div class="row">
+
             <!-- Kenya Education -->
             <div class="col-sm-4">
                 <a target="_blank" href="https://efano.github.io/kenyan_education_map/"><img
@@ -329,6 +379,11 @@
                         Energy Information Administration</a>
                 </p>
             </div>
+        </div>
+
+        <hr class="hr-hide" />
+
+        <div class="row" id="row4">
             <!-- IPHC -->
             <div class="col-sm-4">
                 <a data-toggle="modal" data-target="#IPHC_Web"><img class="img-circle img-responsive img-center"
@@ -346,9 +401,44 @@
                         Halibut Commission</a>
                 </p>
             </div>
+
+            <div class="col-sm-4">
+                <a data-toggle="modal" data-target="#GSENM_wx"><img class="img-circle img-responsive img-center"
+                        src="./images/GSENM_wx_T.png"></a>
+                <h3>Real-time Visitor Weather App</h3>
+                <hr class="hr-sm" />
+                <p>This live, interactive weather application was designed for the Visitor Information Stations
+                    throughout <a target="_blank"
+                        href="https://www.blm.gov/programs/national-conservation-lands/utah/grand-staircase-escalante-national-monument">Grand
+                        Staircase-Escalante National Monument, Utah</a>. This application hybrid combines GIS, Monument
+                    data,
+                    streaming National Weather Service radar data, weather watches, warnings, and public alerts.</p>
+                <p style="margin-top:15px;"><b>Languages:</b> JavaScript, HTML, CSS
+                    <br><b>Applications:</b> ArcMap
+                    <br><b>Data Sources: </b><a target="_blank" href="https://www.weather.gov/">National Weather
+                        Service</a>
+                </p>
+            </div>
+
+            <div class="col-sm-4">
+                <a data-toggle="modal" data-target="#GUA"><img class="img-circle img-responsive img-center"
+                        src="./images/GUA_T.png"></a>
+                <h3>Offline Scalable Land Use Maps</h3>
+                <hr class="hr-sm" />
+                <p>This interactive map viewer website designed for public use with limited or nonexistent Internet
+                    connectivity in rural Alaska. The site provides scalable, detailed information covering a large
+                    portion of the state in a manageable and intuitive format. The user can locate and print a desired
+                    location targeted to their land use needs.</p>
+                <p style="margin-top:15px;"><b>Languages:</b> ActionScript, JavaScript, HTML,
+                    CSS<br><b>Applications:</b> ArcMap, Photoshop, Flash<br><b>Data Sources: </b><a target="_blank"
+                        href="https://www.blm.gov/">Bureau of Land Management</a>
+                </p>
+            </div>
         </div>
+
         <hr class="hr-hide" />
-        <div class="row">
+
+        <div class="row" id="row5">
             <!-- Digital Nomad -->
             <div class="col-sm-4">
                 <a target="_blank"
@@ -401,8 +491,10 @@
             </div>
 
         </div>
+
         <hr class="hr-hide" />
-        <div class="row">
+
+        <div class="row" id="row6">
             <!-- Appalachian Trail -->
             <div class="col-sm-4">
                 <a data-toggle="modal" data-target="#AT_Web"><img class="img-circle img-responsive img-center"
@@ -423,6 +515,7 @@
                         href="http://www.naturalearthdata.com/">Natural Earth</a>
                 </p>
             </div>
+
             <!-- Berlin -->
             <div class="col-sm-4">
                 <a data-toggle="modal" data-target="#Berlin_Web"><img class="img-circle img-responsive img-center"
@@ -436,6 +529,7 @@
                     <b>Data Sources: </b><a target="_blank" href="https://www.openstreetmap.org/">OpenStreetMap</a>
                 </p>
             </div>
+
             <!-- Breweries -->
             <div class="col-sm-4">
                 <a data-toggle="modal" data-target="#Breweries_Web"><img class="img-circle img-responsive img-center"
@@ -446,44 +540,19 @@
                     location data were aggregated into individual 50-kilometer diameter hexagonal polygons and
                     symbolized according to quantity. Denver, Colorado has the highest density of breweries in North
                     America.</p>
-                <p style="margin-top:15px;"><b>Data Sources: </b><a target="_blank" href="http://www.poi-factory.com/">POI Factory</a>
+                <p style="margin-top:15px;"><b>Data Sources: </b><a target="_blank"
+                        href="http://www.poi-factory.com/">POI Factory</a>
                 </p>
             </div>
         </div>
+
         <hr class="hr-hide" />
+
         <!-- <div class="row">
             
-            <div class="col-sm-4">
-                <a data-toggle="modal" data-target="#GSENM_wx"><img class="img-circle img-responsive img-center"
-                        src="./images/GSENM_wx_T.png"></a>
-                <h3>Real-time Visitor Weather App</h3>
-                <hr class="hr-sm" />
-                <p>This live, interactive weather application was designed for the Visitor Information Stations
-                    throughout <a target="_blank"
-                        href="https://www.blm.gov/programs/national-conservation-lands/utah/grand-staircase-escalante-national-monument">Grand
-                        Staircase-Escalante National Monument, Utah</a>. This application hybrid combines GIS, Monument data,
-                    streaming National Weather Service radar data, weather watches, warnings, and public alerts.</p>
-                <p style="margin-top:15px;"><b>Languages:</b> JavaScript, HTML, CSS
-                    <br><b>Applications:</b> ArcMap
-                    <br><b>Data Sources: </b><a target="_blank" href="https://www.weather.gov/">National Weather
-                        Service</a>
-                </p>
-            </div>
             
-            <div class="col-sm-4">
-                <a data-toggle="modal" data-target="#GUA"><img class="img-circle img-responsive img-center"
-                        src="./images/GUA_T.png"></a>
-                <h3>Offline Scalable Land Use Maps</h3>
-                <hr class="hr-sm" />
-                <p>This interactive map viewer website designed for public use with limited or nonexistent Internet
-                    connectivity in rural Alaska. The site provides scalable, detailed information covering a large
-                    portion of the state in a manageable and intuitive format. The user can locate and print a desired
-                    location targeted to their land use needs.</p>
-                <p style="margin-top:15px;"><b>Languages:</b> ActionScript, JavaScript, HTML,
-                    CSS<br><b>Applications:</b> ArcMap, Photoshop, Flash<br><b>Data Sources: </b><a target="_blank"
-                        href="https://www.blm.gov/">Bureau of Land Management</a>
-                </p>
-            </div>
+            
+            
         </div>
         <hr class="hr-hide" /> -->
         <!-- <div class="row">
@@ -628,7 +697,8 @@
                                 <img src="./images/hb4.jpg" alt="image 4" style="width:100%;">
                                 <div class="carousel-caption d-none d-md-block">
                                     <p>Select the Results button</p>
-                                    <p>An SQLite database is queried based on user inputs <br>and a report is generated as a side panel</p>
+                                    <p>An SQLite database is queried based on user inputs <br>and a report is generated
+                                        as a side panel</p>
                                 </div>
                             </div>
                             <div class="item">
