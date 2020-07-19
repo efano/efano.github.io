@@ -186,12 +186,37 @@
                     glacier extent over time.
                 </p>
                 <p style="margin-top:15px;"><b>Languages:</b> JavaScript, Python, HTML, and CSS
-                    <br><b>Libraries:</b> Leaflet, D3.js, jQuery, Assembly.css,
+                    <br><b>Libraries:</b> Leaflet, D3.js, jQuery, Assembly.css
                     <br><b>Data Sources: </b><a target="_blank"
                         href="https://www.usgs.gov/centers/norock/science/retreat-glaciers-glacier-national-park?qt-science_center_objects=0#qt-science_center_objects">USGS,</a>
                     <a target="_blank" href="https://www.nps.gov/glac/index.htm"> NPS,</a><a target="_blank"
                         href="http://glaciers.us/image-galleries/lewis-range-mt.html"> Portland State University,</a>
-                    <a target="_blank" href="http://prism.oregonstate.edu/"> Oregon State University Parameter-elevation Regressions on Independent Slopes Model (PRISM)</a>
+                    <a target="_blank" href="http://prism.oregonstate.edu/"> Oregon State University Parameter-elevation
+                        Regressions on Independent Slopes Model (PRISM)</a>
+                </p>
+            </div>
+
+            <!-- GLBA CTD -->
+            <div class="col-sm-4">
+                <a target="_blank" href="https://efano.github.io/glba-ctd/index.html"><img
+                        class="img-circle img-responsive img-center" src="./images/glbaCTD.png"
+                        alt="CTD Oceanographic Data"></a>
+                <h3>CTD Oceanographic Data</h3>
+                <hr class="hr-sm" />
+                <p><a target="_blank" href="https://www.nps.gov/glba/index.htm">Glacier Bay National Park and
+                        Preserve's</a>
+                    oceanography program consists of 22 permanent monitoring stations that measure standard
+                    oceanographic parameters throughout the water column: temperature, salinity, pressure (depth),
+                    photosynthetically active radiation (PAR - light penetration from the surface), optical
+                    backscatterance (OBS – turbidity), dissolved oxygen concentration, and fluorescence (proxy for
+                    chlorophyll-a concentration, an index of primary productivity). Relying heavily on the D3.js
+                    library, this web application quickly queries each station by cruise date and data type, allowing
+                    users to easily compare monthly, seasonal, and inter-annual variances and data trends.
+                </p>
+                <p style="margin-top:15px;"><b>Languages:</b> JavaScript, Python, HTML, and CSS
+                    <br><b>Libraries:</b> Leaflet, D3.js, jQuery, Assembly.css
+                    <br><b>Data Sources: </b><a target="_blank" href="https://www.nps.gov/im/sean/oceanography.htm">NPS
+                        Southeast Alaska Inventory & Monitoring Network</a>
                 </p>
             </div>
 
@@ -211,12 +236,16 @@
                     groundwater and surface water.
                 </p>
                 <p style="margin-top:15px;"><b>Languages:</b> JavaScript, HTML, CSS, SQL
-                    <br><b>Libraries:</b> Leaflet, D3.js, C3.js, Node.js, Express, Turf.js, jQuery, Bootstrap, Airship
+                    <br><b>Libraries:</b> Leaflet, D3.js, C3.js, Node.js, Express, Turf.js, jQuery, Bootstrap
                     <br><b>Data Sources: </b><a target="_blank" href="https://www.usgs.gov/centers/nv-water">USGS
                         Nevada Water Science Center</a>
                 </p>
             </div>
+        </div>
 
+
+        <hr class="hr-hide" />
+        <div class="row" id="row2">
             <!-- Field trips -->
             <div class="col-sm-4">
                 <a data-toggle="modal" data-target="#fieldtrips"><img class="img-circle img-responsive img-center"
@@ -235,11 +264,6 @@
                         Nevada Water Science Center</a>
                 </p>
             </div>
-        </div>
-
-
-        <hr class="hr-hide" />
-        <div class="row" id="row2">
 
             <!-- Fatal Journeys -->
             <div class="col-sm-4">
@@ -284,7 +308,11 @@
                         Halibut Commission</a>
                 </p>
             </div>
+        </div>
 
+        <hr class="hr-hide" />
+
+        <div class="row" id="row3">
             <!-- Coastal Vulnerability -->
             <div class="col-sm-4">
                 <a target="_blank" href="https://efano.github.io/coastal-vulnerability/"><img
@@ -312,11 +340,7 @@
                         Geographic Names</a>
                 </p>
             </div>
-        </div>
 
-        <hr class="hr-hide" />
-
-        <div class="row" id="row3">
             <!-- NZ Invasive Water Buttercup -->
             <div class="col-sm-4">
                 <a target="_blank" href="https://efano.github.io/invasive-water-buttercup/"><img
@@ -360,6 +384,11 @@
                     </a>
                 </p>
             </div>
+        </div>
+
+        <hr class="hr-hide" />
+
+        <div class="row" id="row4">
             <!-- Power Plants -->
             <div class="col-sm-4">
                 <a target="_blank" href="https://efano.github.io/bi-variate-prop/"><img
@@ -379,11 +408,6 @@
                         Energy Information Administration</a>
                 </p>
             </div>
-        </div>
-
-        <hr class="hr-hide" />
-
-        <div class="row" id="row4">
             <!-- IPHC -->
             <div class="col-sm-4">
                 <a data-toggle="modal" data-target="#IPHC_Web"><img class="img-circle img-responsive img-center"
@@ -420,7 +444,7 @@
                 </p>
             </div>
 
-            <div class="col-sm-4">
+            <!-- <div class="col-sm-4">
                 <a data-toggle="modal" data-target="#GUA"><img class="img-circle img-responsive img-center"
                         src="./images/GUA_T.png"></a>
                 <h3>Offline Scalable Land Use Maps</h3>
@@ -433,7 +457,7 @@
                     CSS<br><b>Applications:</b> ArcMap, Photoshop, Flash<br><b>Data Sources: </b><a target="_blank"
                         href="https://www.blm.gov/">Bureau of Land Management</a>
                 </p>
-            </div>
+            </div> -->
         </div>
 
         <hr class="hr-hide" />
@@ -1034,12 +1058,9 @@
         </div>
         <hr />
     </div>
-
-    <!-- Javascript -->
     <script src="./js/jquery-2.2.3.min.js"></script>
     <script src="./js/bootstrap.js"></script>
     <script src="./js/validator.js"></script>
-
 </body>
 
 </html>
