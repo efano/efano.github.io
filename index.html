@@ -152,6 +152,19 @@
             color: #444;
             text-decoration: underline;
         }
+
+        .trophy {
+            color: gold;
+            -webkit-text-stroke-width: .4px;
+            -webkit-text-stroke-color: #444;
+        }
+
+        .winner {
+            display: block;
+            color: #444;
+            font-weight: bold; 
+            margin-bottom: -10px;
+        }
     </style>
 </head>
 
@@ -183,7 +196,11 @@
                         alt="Our vanishing glaciers"></a>
                 <h3><a target="_blank" class ="title" href="https://efano.github.io/GNP-glaciers/index.html">Our Vanishing Glaciers</a></h3>
                 <hr class="hr-sm" />
-                <p>Over 150 alpine glaciers existed in <a target="_blank" href="https://www.nps.gov/glac/index.htm">
+                <p>
+                    <span class="winner">
+                    <i class="fa fa-trophy trophy" aria-hidden="true"></i>
+                    &nbsp;Winner of the 2020 NACIS Individual Student Dynamic Mapping Competition!</span><br>
+                    Over 150 alpine glaciers existed in <a target="_blank" href="https://www.nps.gov/glac/index.htm">
                         Glacier National Park,</a> Montana (NPS) at the end of the Little Ice Age. In 1966, the park had
                     35 named glaciers large enough to be considered active. By
                     2015, only 26 of those glaciers remained. The <a target="_blank"
@@ -194,7 +211,9 @@
                     experience that visualizes the decrease in
                     glacier extent over time.
                 </p>
-                <p style="margin-top:15px;"><b>Languages:</b> JavaScript, Python, HTML, and CSS
+                <p style="margin-top:15px;">
+                    <b>Libraries:</b> Leaflet, D3.js, jQuery, Assembly.css
+                    <br><b>Languages:</b> JavaScript, Python, HTML, and CSS
                     <br><b>Libraries:</b> Leaflet, D3.js, jQuery, Assembly.css
                     <br><b>Data Sources: </b><a target="_blank"
                         href="https://www.usgs.gov/centers/norock/science/retreat-glaciers-glacier-national-park?qt-science_center_objects=0#qt-science_center_objects">USGS,</a>
@@ -255,6 +274,34 @@
 
         <hr class="hr-hide" />
         <div class="row" id="row2">
+            <!-- Fatal Journeys -->
+            <div class="col-sm-4">
+                <a target="_blank" href="https://efano.github.io/global-migrant-deaths/migrant-deaths.html"><img
+                        class="img-circle img-responsive img-center" src="./images/migrant-deathsT.png"
+                        alt="mapping migrant deaths"></a>
+                <h3><a target="_blank" class ="title" href="https://efano.github.io/global-migrant-deaths/migrant-deaths.html">Fatal Journeys</a></h3>
+                <hr class="hr-sm" />
+                <p>
+                    <span class="winner">
+                        <i class="fa fa-trophy trophy" aria-hidden="true"></i>
+                        &nbsp;2019 CaGIS Digital Map Honorable Mention!</span><br>
+                    Every year, hundreds of thousands of people leave their homes in search of a better life. Many are
+                    injured or killed, while many more go missing. The <a target="_blank"
+                        href="https://missingmigrants.iom.int/">U.N.’s
+                        International Organization for Migration's (IOM) Missing Migrants Project </a>tracks incidents
+                    involving migrants, including refugees and asylum-seekers, who have died or gone missing in the
+                    process of migration towards an international
+                    destination. The code for this web map can be
+                    viewed on <a target="_blank"
+                        href="https://github.com/efano/global-migrant-deaths/blob/master/migrant-deaths.html">Github</a>.
+                </p>
+                <p style="margin-top:15px;"><b>Languages:</b> JavaScript, HTML, CSS
+                    <br><b>Libraries:</b> Mapbox GL JS, D3.js, Turf.js, Assembly.css
+                    <br><b>Data Sources: </b><a target="_blank" href="https://missingmigrants.iom.int/downloads">Missing
+                        Migrant Project</a>
+                </p>
+            </div>
+
             <!-- IPHC Setline Surveys -->
             <div class="col-sm-4">
                 <a target="_blank" href="https://efano.github.io/iphc_survey_map/"><img
@@ -290,30 +337,6 @@
                     <br><b>Libraries:</b> Leaflet, jQuery, Bootstrap, Lodash
                     <br><b>Data Sources: </b><a target="_blank" href="https://www.usgs.gov/centers/nv-water">USGS
                         Nevada Water Science Center</a>
-                </p>
-            </div>
-
-            <!-- Fatal Journeys -->
-            <div class="col-sm-4">
-                <a target="_blank" href="https://efano.github.io/global-migrant-deaths/migrant-deaths.html"><img
-                        class="img-circle img-responsive img-center" src="./images/migrant-deathsT.png"
-                        alt="mapping migrant deaths"></a>
-                <h3><a target="_blank" class ="title" href="https://efano.github.io/global-migrant-deaths/migrant-deaths.html">Fatal Journeys</a></h3>
-                <hr class="hr-sm" />
-                <p>Every year, hundreds of thousands of people leave their homes in search of a better life. Many are
-                    injured or killed, while many more go missing. The <a target="_blank"
-                        href="https://missingmigrants.iom.int/">U.N.’s
-                        International Organization for Migration's (IOM) Missing Migrants Project </a>tracks incidents
-                    involving migrants, including refugees and asylum-seekers, who have died or gone missing in the
-                    process of migration towards an international
-                    destination. The code for this web map can be
-                    viewed on <a target="_blank"
-                        href="https://github.com/efano/global-migrant-deaths/blob/master/migrant-deaths.html">Github</a>.
-                </p>
-                <p style="margin-top:15px;"><b>Languages:</b> JavaScript, HTML, CSS
-                    <br><b>Libraries:</b> Mapbox GL JS, D3.js, Turf.js, Assembly.css
-                    <br><b>Data Sources: </b><a target="_blank" href="https://missingmigrants.iom.int/downloads">Missing
-                        Migrant Project</a>
                 </p>
             </div>
         </div>
