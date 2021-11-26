@@ -1,0 +1,157 @@
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+}
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1.2s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.carousel-caption {
+  z-index: 10;
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 1.25rem;
+  left: 15%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: #fff;
+  text-align: center;
+}
+
+.caption {
+	text-shadow: -1px -1px 0 #F8F9FA, 1px -1px 0 #F8F9FA, -1px 1px 0 #F8F9FA, 1px 1px 0 #F8F9FA;
+}
+
+.carousel-dark .carousel-indicators [data-bs-target] {
+  border: #F8F9FA;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.featurette-divider {
+  margin: 5rem 0;
+}
+
+@media (min-width: 40em) {
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+}
+
+p {
+  font-size: small;
+  color: #5a5a5a;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.nav-logo {
+  font-size: 28px;
+}
+
+.title {
+  margin-top: 20px;
+  margin-bottom: 70px;
+}
+
+.trophy {
+  color: gold;
+  -webkit-text-stroke-width: .5px;
+  -webkit-text-stroke-color: #444;
+}
+
+.winner {
+  display: block;
+  color: #5a5a5a;
+  font-weight: bold;
+  margin-bottom: -10px;
+}
+
+.container-main {
+  min-width: 500px;
+}
+
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.img-center-tall {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 370px;
+}
+
+.img-center-short {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.img-hover-zoom {
+  border-radius: 50%;
+  border: 2px solid #DEE2E6;
+  width: 300px;
+  min-width: 300px;
+  height: 300px; 
+  overflow: hidden;
+  padding: 0px; 
+}
+
+.img-circle {
+  width: 300px;
+  height: 300px; 
+}
+
+.img-hover-zoom:hover {
+  border: 2px solid #ADB5BD;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; 
+}
+
+.img-hover-zoom--slowmo img {
+  transform-origin: 50% 50%;
+  transition: transform 2s, filter 2s ease-in-out;
+}
+
+.img-hover-zoom--slowmo:hover img {
+  transform: scale(1.2);
+}
+
+.btn-sm:hover {
+  text-decoration: none;
+}
