@@ -123,7 +123,7 @@ a:hover {
 
 .img-hover-zoom {
   border-radius: 50%;
-  border: 2px solid #DEE2E6;
+  border: 1px solid #ADB5BD;
   width: 300px;
   min-width: 300px;
   height: 300px; 
@@ -137,7 +137,7 @@ a:hover {
 }
 
 .img-hover-zoom:hover {
-  border: 2px solid #ADB5BD;
+  border: 1px solid #6D757D;
   -webkit-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out; 
