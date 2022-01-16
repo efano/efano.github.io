@@ -97,6 +97,10 @@ a:hover {
   min-width: 500px;
 }
 
+.img-container {
+  max-width: 500px;
+}
+
 .img-responsive,
 .thumbnail > img,
 .thumbnail a > img,
