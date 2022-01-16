@@ -98,7 +98,9 @@ a:hover {
 }
 
 .img-container {
-  max-width: 500px;
+  width: auto;
+  height: auto;
+  padding: 10px 70px 30px 70px;
 }
 
 .img-responsive,
@@ -109,20 +111,6 @@ a:hover {
   display: block;
   max-width: 100%;
   height: auto;
-}
-
-.img-center-tall {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 370px;
-}
-
-.img-center-short {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 300px;
 }
 
 .img-hover-zoom {
