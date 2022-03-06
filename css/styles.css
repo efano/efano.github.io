@@ -55,13 +55,13 @@ body {
 @media (min-width: 40em) {
   .carousel-caption p {
     margin-bottom: 1.25rem;
-    font-size: 1.25rem;
+    font-size: medium;
     line-height: 1.4;
   }
 }
 
 p {
-  font-size: small;
+  font-size: medium;
   color: #5a5a5a;
 }
 
@@ -73,12 +73,26 @@ a:hover {
   text-decoration: underline;
 }
 
+.navbar {
+  -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 6px 4px -6px #999;
+}
+
+.navbar-brand {
+  font-size: 30px;
+}
+
 .nav-logo {
-  font-size: 28px;
+  font-size: 30px;
+}
+
+.nav-link {
+  font-size: 24px;
 }
 
 .title {
-  margin-top: 20px;
+  margin-top: 30px;
   margin-bottom: 70px;
 }
 
