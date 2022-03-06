@@ -2,25 +2,25 @@ body {
   padding-top: 3rem;
   padding-bottom: 3rem;
   color: #5a5a5a;
-  background-image: linear-gradient(22.5deg, rgba(67, 67, 67, 0.02) 0%, rgba(67, 67, 67, 0.02) 29%,rgba(47, 47, 47, 0.02) 29%, rgba(47, 47, 47, 0.02) 37%,rgba(23, 23, 23, 0.02) 37%, rgba(23, 23, 23, 0.02) 55%,rgba(182, 182, 182, 0.02) 55%, rgba(182, 182, 182, 0.02) 69%,rgba(27, 27, 27, 0.02) 69%, rgba(27, 27, 27, 0.02) 71%,rgba(250, 250, 250, 0.02) 71%, rgba(250, 250, 250, 0.02) 100%),linear-gradient(67.5deg, rgba(117, 117, 117, 0.02) 0%, rgba(117, 117, 117, 0.02) 14%,rgba(199, 199, 199, 0.02) 14%, rgba(199, 199, 199, 0.02) 40%,rgba(33, 33, 33, 0.02) 40%, rgba(33, 33, 33, 0.02) 48%,rgba(135, 135, 135, 0.02) 48%, rgba(135, 135, 135, 0.02) 60%,rgba(148, 148, 148, 0.02) 60%, rgba(148, 148, 148, 0.02) 95%,rgba(53, 53, 53, 0.02) 95%, rgba(53, 53, 53, 0.02) 100%),linear-gradient(135deg, rgba(190, 190, 190, 0.02) 0%, rgba(190, 190, 190, 0.02) 6%,rgba(251, 251, 251, 0.02) 6%, rgba(251, 251, 251, 0.02) 18%,rgba(2, 2, 2, 0.02) 18%, rgba(2, 2, 2, 0.02) 27%,rgba(253, 253, 253, 0.02) 27%, rgba(253, 253, 253, 0.02) 49%,rgba(128, 128, 128, 0.02) 49%, rgba(128, 128, 128, 0.02) 76%,rgba(150, 150, 150, 0.02) 76%, rgba(150, 150, 150, 0.02) 100%),linear-gradient(90deg, #ffffff,#ffffff);
-
+  background-image: linear-gradient(22.5deg, rgba(67, 67, 67, 0.02) 0%, rgba(67, 67, 67, 0.02) 29%, rgba(47, 47, 47, 0.02) 29%, rgba(47, 47, 47, 0.02) 37%, rgba(23, 23, 23, 0.02) 37%, rgba(23, 23, 23, 0.02) 55%, rgba(182, 182, 182, 0.02) 55%, rgba(182, 182, 182, 0.02) 69%, rgba(27, 27, 27, 0.02) 69%, rgba(27, 27, 27, 0.02) 71%, rgba(250, 250, 250, 0.02) 71%, rgba(250, 250, 250, 0.02) 100%), linear-gradient(67.5deg, rgba(117, 117, 117, 0.02) 0%, rgba(117, 117, 117, 0.02) 14%, rgba(199, 199, 199, 0.02) 14%, rgba(199, 199, 199, 0.02) 40%, rgba(33, 33, 33, 0.02) 40%, rgba(33, 33, 33, 0.02) 48%, rgba(135, 135, 135, 0.02) 48%, rgba(135, 135, 135, 0.02) 60%, rgba(148, 148, 148, 0.02) 60%, rgba(148, 148, 148, 0.02) 95%, rgba(53, 53, 53, 0.02) 95%, rgba(53, 53, 53, 0.02) 100%), linear-gradient(135deg, rgba(190, 190, 190, 0.02) 0%, rgba(190, 190, 190, 0.02) 6%, rgba(251, 251, 251, 0.02) 6%, rgba(251, 251, 251, 0.02) 18%, rgba(2, 2, 2, 0.02) 18%, rgba(2, 2, 2, 0.02) 27%, rgba(253, 253, 253, 0.02) 27%, rgba(253, 253, 253, 0.02) 49%, rgba(128, 128, 128, 0.02) 49%, rgba(128, 128, 128, 0.02) 76%, rgba(150, 150, 150, 0.02) 76%, rgba(150, 150, 150, 0.02) 100%), linear-gradient(90deg, #ffffff, #ffffff);
 }
 
 .fade-in {
-	opacity: 1;
-	animation-name: fadeInOpacity;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-	animation-duration: 1.2s;
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1.2s;
 }
 
 @keyframes fadeInOpacity {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .carousel-caption {
@@ -39,7 +39,7 @@ body {
 }
 
 .caption {
-	text-shadow: -1px -1px 0 #F8F9FA, 1px -1px 0 #F8F9FA, -1px 1px 0 #F8F9FA, 1px 1px 0 #F8F9FA;
+  text-shadow: -1px -1px 0 #F8F9FA, 1px -1px 0 #F8F9FA, -1px 1px 0 #F8F9FA, 1px 1px 0 #F8F9FA;
 }
 
 .carousel-dark .carousel-indicators [data-bs-target] {
@@ -106,10 +106,10 @@ a:hover {
 }
 
 .img-responsive,
-.thumbnail > img,
-.thumbnail a > img,
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
+.thumbnail>img,
+.thumbnail a>img,
+.carousel-inner>.item>img,
+.carousel-inner>.item>a>img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -120,21 +120,21 @@ a:hover {
   border: 1px solid #ADB5BD;
   width: 300px;
   min-width: 300px;
-  height: 300px; 
+  height: 300px;
   overflow: hidden;
-  padding: 0px; 
+  padding: 0px;
 }
 
 .img-circle {
   width: 300px;
-  height: 300px; 
+  height: 300px;
 }
 
 .img-hover-zoom:hover {
   border: 1px solid #6D757D;
   -webkit-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out; 
+  transition: all 0.5s ease-in-out;
 }
 
 .img-hover-zoom--slowmo img {
