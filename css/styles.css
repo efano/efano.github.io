@@ -24,28 +24,25 @@ body {
 }
 
 .carousel-caption {
-  z-index: 10;
-}
-
-.carousel-caption {
   position: absolute;
   right: 15%;
-  bottom: 1.25rem;
   left: 15%;
-  padding-top: 1rem;
+  bottom: 0rem; 
+  padding-top: 3rem; 
   padding-bottom: 1rem;
-  color: #fff;
   text-align: center;
 }
 
-.caption {
-  text-shadow: -1px -1px 0 #F8F9FA, 1px -1px 0 #F8F9FA, -1px 1px 0 #F8F9FA, 1px 1px 0 #F8F9FA;
+.modal-footer {
+  height: 120px;
 }
 
-.carousel-dark .carousel-indicators [data-bs-target] {
-  border: #F8F9FA;
-  border-style: solid;
-  border-width: 1px;
+#footer-IPHC {
+  height: 200px;
+}
+
+#footer-GSENM{
+  height: 190px;
 }
 
 .featurette-divider {

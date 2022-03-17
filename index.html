@@ -44,7 +44,7 @@
 
     <!-- modals -->
 
-    <div class="modal fade-in" id="HBCQT" tabindex="-1">
+    <div class="modal fade" id="HBCQT" tabindex="-1">
       <div class="modal-dialog modal-xl">
         <div class="modal-content">
           <div class="modal-header">
@@ -53,8 +53,7 @@
           </div>
           <div class="modal-body">
             <!-- carousel-->
-            <div id="humboldt-carousel" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel"
-              data-bs-interval="3000">
+            <div id="humboldt-carousel" class="carousel carousel-dark slide carousel-slide" data-bs-ride="carousel">
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#humboldt-carousel" data-bs-slide-to="0" class="active"
                   aria-current="true" aria-label="Slide 1"></button>
@@ -70,36 +69,46 @@
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img src="./images/hb1.jpg" class="d-block w-100" alt="slide one">
-                  <div class="carousel-caption d-none d-md-block">
-                    <p class="caption">A three-step process</p>
+                  <div class="modal-footer footer-humboldt">
+                    <div class="carousel-caption d-none d-md-block">
+                      <p class="caption">A three-step process</p>
+                    </div>
                   </div>
                 </div>
                 <div class="carousel-item">
                   <img src="./images/hb2.jpg" class="d-block w-100" alt="slide two">
-                  <div class="carousel-caption d-none d-md-block">
-                    <p class="caption">Step 1: Select a location by either clicking on the map or <br> by entering
-                      coordinates in the text boxes</p>
+                  <div class="modal-footer footer-humboldt">
+                    <div class="carousel-caption d-none d-md-block">
+                      <p class="caption">Step 1: Select a location by either clicking on the map or <br> by entering
+                        coordinates in the text boxes</p>
+                    </div>
                   </div>
                 </div>
                 <div class="carousel-item">
                   <img src="./images/hb3.jpg" class="d-block w-100" alt="slide three">
-                  <div class="carousel-caption d-none d-md-block">
-                    <p class="caption">Step 2: Enter the desired depth below surface in the text box<br>
-                      Step 3: Using the range slider, select the number of years of pumping<br>Select the Results button
-                    </p>
+                  <div class="modal-footer footer-humboldt">
+                    <div class="carousel-caption d-none d-md-block">
+                      <p class="caption">Step 2: Enter the desired depth below surface in the text box<br>
+                        Step 3: Using the range slider, select the number of years of pumping<br>Select the Results button
+                      </p>
+                    </div>
                   </div>
                 </div>
                 <div class="carousel-item">
                   <img src="./images/hb4.jpg" class="d-block w-100" alt="slide four">
-                  <div class="carousel-caption d-none d-md-block">
-                    <p class="caption">An SQLite database is queried based on user inputs <br>and a report is generated
-                      as a side panel</p>
+                  <div class="modal-footer footer-humboldt">
+                    <div class="carousel-caption d-none d-md-block">
+                      <p class="caption">An SQLite database is queried based on user inputs <br>and a report is generated
+                        as a side panel</p>
+                    </div>
                   </div>
                 </div>
                 <div class="carousel-item">
                   <img src="./images/hb5.jpg" class="d-block w-100" alt="slide five">
-                  <div class="carousel-caption d-none d-md-block">
-                    <p class="caption">The report is fully interactive and can be printed</p>
+                  <div class="modal-footer">
+                    <div class="carousel-caption d-none d-md-block">
+                      <p class="caption">The report is fully interactive and can be printed</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -120,7 +129,7 @@
       </div>
     </div>
 
-    <div class="modal fade-in" id="fieldtrips" tabindex="-1">
+    <div class="modal fade" id="fieldtrips" tabindex="-1">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
@@ -129,8 +138,7 @@
           </div>
           <div class="modal-body">
             <!-- carousel-->
-            <div id="fieldtrip-carousel" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel"
-              data-bs-interval="3000">
+            <div id="fieldtrip-carousel" class="carousel carousel-dark slide carousel-slide" data-bs-ride="carousel">
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#fieldtrip-carousel" data-bs-slide-to="0" class="active"
                   aria-current="true" aria-label="Slide 1"></button>
@@ -144,26 +152,34 @@
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img src="./images/trips1.jpg" class="d-block w-100" alt="slide one">
-                  <div class="carousel-caption d-none d-md-block">
-                    <p class="caption">Select a USGS Water Science Center <br>to filter the national dataset</p>
+                  <div class="modal-footer footer-trips">
+                    <div class="carousel-caption d-none d-md-block">
+                      <p class="caption">Select a USGS Water Science Center <br>to filter the national dataset</p>
+                    </div>
                   </div>
                 </div>
                 <div class="carousel-item">
                   <img src="./images/trips2.jpg" class="d-block w-100" alt="slide two">
-                  <div class="carousel-caption d-none d-md-block">
-                    <p class="caption">Select a USGS field office to further filter data</p>
+                  <div class="modal-footer footer-trips">
+                    <div class="carousel-caption d-none d-md-block">
+                      <p class="caption">Select a USGS field office to further filter data</p>
+                    </div>
                   </div>
                 </div>
                 <div class="carousel-item">
                   <img src="./images/trips3.png" class="d-block w-100" alt="slide three">
-                  <div class="carousel-caption d-none d-md-block">
-                    <p class="caption">Field trip site locations are aggregated by color</p>
+                  <div class="modal-footer footer-trips">
+                    <div class="carousel-caption d-none d-md-block">
+                      <p class="caption">Field trip site locations are aggregated by color</p>
+                    </div>
                   </div>
                 </div>
                 <div class="carousel-item">
                   <img src="./images/trips4.png" class="d-block w-100" alt="slide four">
-                  <div class="carousel-caption d-none d-md-block">
-                    <p class="caption">Individual site locations are fully interactive</p>
+                  <div class="modal-footer footer-trips">
+                    <div class="carousel-caption d-none d-md-block">
+                      <p class="caption">Individual site locations are fully interactive</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -184,7 +200,7 @@
       </div>
     </div>
 
-    <div class="modal fade-in" id="IPHC_Web" tabindex="-1">
+    <div class="modal fade" id="IPHC_Web" tabindex="-1">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
@@ -194,20 +210,20 @@
           <div class="modal-body">
             <a href="./images/IPHC_Web.png" id="IPHC_web"> <img src="./images/IPHC_Web.png" style="width: 100%;"></a>
           </div>
-          <div class="modal-footer">
+          <div class="modal-footer" id="footer-IPHC">
             <p>The International Pacific Halibut Commission (IPHC) studies the management
               of the stocks of Pacific halibut (Hippoglossus stenolepis) within the Convention waters of
               the United States and Canada. Commercial fishing is still permitted under certain circumstances
               within Glacier Bay National Park. This screenshot displays an interactive web map
               developed for the National Park Service that combines both spatial and temporal IPHC statistical
               harvest data.</p>
-            <button type="button" class="btn btn-secondary " data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="modal fade-in" id="GSENM_wx" tabindex="-1">
+    <div class="modal fade" id="GSENM_wx" tabindex="-1">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
@@ -217,14 +233,14 @@
           <div class="modal-body">
             <a href="./images/GSENM_wx.png" id="GSENM_weather"> <img src="./images/GSENM_wx.png" style="width: 100%;"></a>
           </div>
-          <div class="modal-footer">
+          <div class="modal-footer" id="footer-GSENM">
             <p>This live, interactive weather application was designed for the Visitor
               Information Stations throughout <a target="_blank"
                 href="https://www.blm.gov/programs/national-conservation-lands/utah/grand-staircase-escalante-national-monument">Grand
                 Staircase-Escalante National Monument, Utah</a>. This application hybrid combines GIS, monument data,
               streaming National Weather Service radar data, weather watches, warnings, and public alerts.
             </p>
-            <button type="button" class="btn btn-secondary " data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
