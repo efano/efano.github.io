@@ -157,6 +157,6 @@ a:hover {
   transform: scale(1.2);
 }
 
-.btn-sm:hover {
+.btn:hover {
   text-decoration: none;
 }
