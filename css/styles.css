@@ -126,6 +126,11 @@ a:hover {
   height: auto;
 }
 
+.carousel-img-vertical {
+  width: 50%;
+  margin: auto;
+}
+
 .img-hover-zoom {
   border-radius: 50%;
   border: 1px solid #ADB5BD;

@@ -44,6 +44,112 @@
 
     <!-- modals -->
 
+    <div class="modal fade" id="buoys" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Great Lakes Buoys Status Tracker</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- carousel-->
+            <div id="buoy-carousel" class="carousel carousel-dark slide carousel-slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#buoy-carousel" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#buoy-carousel" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#buoy-carousel" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#buoy-carousel" data-bs-slide-to="3"
+                  aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#buoy-carousel" data-bs-slide-to="4"
+                  aria-label="Slide 5"></button>
+                  <button type="button" data-bs-target="#buoy-carousel" data-bs-slide-to="5"
+                  aria-label="Slide 6"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./images/buoy1.png" class="d-block w-100" alt="slide one">
+                  <div class="modal-footer footer-buoy">
+                    <div class="carousel-caption d-none d-md-block">
+                      <p class="caption">
+                        The application dynamically displays 2-way, real-time buoy locations on a Leaflet map and as a sidebar accordion list.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="./images/buoy2.png" class="d-block w-100" alt="slide two">
+                  <div class="modal-footer footer-buoy">
+                    <div class="carousel-caption d-none d-md-block">
+                      <p class="caption">
+                        Once opened, the accordion displays realtime sensor data retrieved from the THREDDS data server, 
+                        and user comments retrieved from the application's database.
+
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="./images/buoy3.png" class="d-block w-50 carousel-img-vertical" alt="slide three">
+                  <div class="modal-footer footer-buoy">
+                    <div class="carousel-caption d-none d-md-block">
+                      <p class="caption">
+                        The Django authentication system handles both authentication and authorization. 
+                        The user can choose to register for an account, log in, or view the application as a guest.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="./images/buoy4.png" class="d-block w-100" alt="slide four">
+                  <div class="modal-footer footer-buoy">
+                    <div class="carousel-caption d-none d-md-block">
+                      <p class="caption">
+                        A logged-in user can add a comment.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="./images/buoy5.png" class="d-block w-100" alt="slide five">
+                  <div class="modal-footer footer-buoy">
+                    <div class="carousel-caption d-none d-md-block">
+                      <p class="caption">
+                        The submitted comment is immediately displayed with user information, date/time and a delete button.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="./images/buoy67.png" class="d-block w-75 carousel-img-vertical" alt="slide six">
+                  <div class="modal-footer footer-buoy">
+                    <div class="carousel-caption d-none d-md-block">
+                      <p class="caption">
+                        The application is fully responsive.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#buoy-carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#buoy-carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <!-- end carousel-->
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="modal fade" id="HBCQT" tabindex="-1">
       <div class="modal-dialog modal-xl">
         <div class="modal-content">
@@ -258,6 +364,41 @@
 
       <div class="row featurette justify-content-center align-items-center">
         <div class="col-6 col-md-6 order-2 container-main">
+          <h3 class="title-project">Great Lakes Buoys Status Tracker</h3>
+          <hr class="hr-sm" />
+          <p>The Great Lakes Buoys Status Tracker application is designed to provide an interactive web experience 
+            that visualizes the current buoy location within the Great Lakes region, realtime sensor data access, and a comment thread 
+            interface that is editable by a logged-in user. The premise of this projects is a concept study of how 
+            multiple agencies could quickly access realtime data that could indicate instrument sensor issues, as well as a medium 
+            of sharing maintenance and transportation scheduling. This full-stack application was built using the Django framework 
+            and an SQLite database. The code for this web application can be viewed on <a target="_blank" href="https://github.com/efano/buoys-django">GitHub</a>.
+          </p>
+          <p style="margin-top:15px;"><b>Languages:</b> Python, JavaScript, HTML, CSS
+            <br><b>Libraries:</b> Leaflet, jQuery, Bootstrap
+            <br><b>Data Sources: </b>
+            <a target="_blank"
+              href="https://www.ucar.edu/">University Corporation for Atmospheric Research (UCAR)</a>'s
+            <a target="_blank" href="https://unidata.github.io/python-training/workshop/Surface_Data/surface-data-with-siphon-and-metpy/"> THREDDS data server</a>
+          </p>
+          <p>
+            <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#buoys">
+              <i class="bi bi-map-fill"></i>&nbsp;&thinsp;View »
+            </button>
+          </p>
+        </div>
+        <div class="col-5 col-md-5 order-1 justify-content-center align-items-center img-container">
+          <div class="img-hover-zoom img-hover-zoom--slowmo">
+            <a data-bs-toggle="modal" data-bs-target="#buoys">
+              <img class="img-circle img-responsive" src="./images/buoysT.png" alt="Image of Chicago buoys">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette justify-content-center align-items-center">
+        <div class="col-6 col-md-6 order-lg-1 order-md-2 order-2 container-main">
           <h3 class="title-project">Our Vanishing Glaciers</h3>
           <hr class="hr-sm" />
           <p>
@@ -291,7 +432,7 @@
               role="button"><i class="bi bi-geo-fill"></i>&nbsp;View web app »</a>
           </p>
         </div>
-        <div class="col-5 col-md-5 order-1 justify-content-center align-items-center img-container">
+        <div class="col-5 col-md-5 order-lg-2 order-1 justify-content-center align-items-center img-container">
           <div class="img-hover-zoom img-hover-zoom--slowmo">
             <a target="_blank" href="https://efano.github.io/GNP-glaciers/index.html">
               <img class="img-circle img-responsive" src="./images/glaciersT.jpg" alt="Our vanishing glaciers">
@@ -303,7 +444,7 @@
       <hr class="featurette-divider">
 
       <div class="row featurette justify-content-center align-items-center">
-        <div class="col-6 col-md-6 order-lg-1 order-md-2 order-2 container-main text-right">
+        <div class="col-6 col-md-6 order-2 container-main text-right">
           <h3 class="title-project">CTD Profile Measurements</h3>
           <hr class="hr-sm" />
           <p><a target="_blank" href="https://www.nps.gov/glba/index.htm">Glacier Bay National Park and
@@ -327,7 +468,7 @@
               role="button"><i class="bi bi-geo-fill"></i>&nbsp;View web app »</a>
           </p>
         </div>
-        <div class="col-5 col-md-5 order-lg-2 order-1 justify-content-center align-items-center img-container">
+        <div class="col-5 col-md-5 order-1 justify-content-center align-items-center img-container">
           <div class="img-hover-zoom img-hover-zoom--slowmo">
             <a target="_blank" href="https://efano.github.io/glba-ctd/index.html"><img class="img-circle img-responsive"
                 src="./images/glbaCTD.png" alt="CTD Oceanographic Data"></a>
@@ -339,7 +480,7 @@
       <hr class="featurette-divider">
 
       <div class="row featurette justify-content-center align-items-center">
-        <div class="col-6 col-md-6 order-2 container-main">
+        <div class="col-6 col-md-6 order-lg-1 order-md-2 order-2 container-main">
           <h3 class="title-project">Humboldt Capture Query Tool</h3>
           <hr class="hr-sm" />
           <p>The Humboldt Capture Query Tool was developed as part of a USGS research project to
@@ -361,7 +502,7 @@
             </button>
           </p>
         </div>
-        <div class="col-5 col-md-5 order-1 justify-content-center align-items-center img-container">
+        <div class="col-5 col-md-5 order-lg-2 order-1 justify-content-center align-items-center img-container">
           <div class="img-hover-zoom img-hover-zoom--slowmo">
             <a data-bs-toggle="modal" data-bs-target="#HBCQT"><img class="img-circle img-responsive"
                 src="./images/hbT.jpg" alt="Humboldt Capture Query Tool"></a>
@@ -372,7 +513,7 @@
       <hr class="featurette-divider">
 
       <div class="row featurette justify-content-center align-items-center">
-        <div class="col-6 col-md-6 order-lg-1 order-md-2 order-2 container-main text-right">
+        <div class="col-6 col-md-6 order-2 container-main text-right">
           <h3 class="title-project">IPHC Setline Surveys</h3>
           <hr class="hr-sm" />
           <p>The <a target="_blank" href="http://www.iphc.int/">International Pacific Halibut Commission
@@ -391,7 +532,7 @@
               role="button"><i class="bi bi-geo-fill"></i>&nbsp;View web app »</a>
           </p>
         </div>
-        <div class="col-5 col-md-5 order-lg-2 order-1 justify-content-center align-items-center img-container">
+        <div class="col-5 col-md-5 order-1 justify-content-center align-items-center img-container">
           <div class="img-hover-zoom img-hover-zoom--slowmo">
             <a target="_blank" href="https://efano.github.io/iphc_survey_map/"><img
                 class="img-circle img-responsive img-center" src="./images/IPHCS_T.png" alt="An IPHC survey map"></a>
@@ -402,7 +543,7 @@
       <hr class="featurette-divider">
 
       <div class="row featurette justify-content-center align-items-center">
-        <div class="col-6 col-md-6 order-2 container-main">
+        <div class="col-6 col-md-6 order-lg-1 order-md-2 order-2 container-main">
           <h3 class="title-project">Data Collecting Utilizing Local Storage and Geolocation</h3>
           <hr class="hr-sm" />
           <p>
@@ -424,7 +565,7 @@
               role="button"><i class="bi bi-geo-fill"></i>&nbsp;View web app »</a>
           </p>
         </div>
-        <div class="col-5 col-md-5 order-1 justify-content-center align-items-center img-container">
+        <div class="col-5 col-md-5 order-lg-2 order-1 justify-content-center align-items-center img-container">
           <div class="img-hover-zoom img-hover-zoom--slowmo">
             <a target="_blank" href="https://efano.github.io/local-storage/">
               <img class="img-circle img-responsive" src="./images/local-storage.png" alt="Data collecting example">
@@ -436,7 +577,7 @@
       <hr class="featurette-divider">
 
       <div class="row featurette justify-content-center align-items-center">
-        <div class="col-6 col-md-6 order-lg-1 order-md-2 order-2 container-main">
+        <div class="col-6 col-md-6 order-2 container-main">
           <h3 class="title-project" src="./images/fieldtripsT.png">Field Trip Visualization Tool</h3>
           <hr class="hr-sm" />
           <p>The Field Trip Visualization Tool is a nationwide, internal USGS application designed to assist
@@ -456,7 +597,7 @@
             </button>
           </p>
         </div>
-        <div class="col-5 col-md-5 order-lg-2 order-1 justify-content-center align-items-center img-container">
+        <div class="col-5 col-md-5 order-1 justify-content-center align-items-center img-container">
           <div class="img-hover-zoom img-hover-zoom--slowmo">
             <a data-bs-toggle="modal" data-bs-target="#fieldtrips"><img class="img-circle img-responsive"
                 src="./images/fieldtripsT.png" alt="Field Trip Visualization Tool"></a>
@@ -467,7 +608,7 @@
       <hr class="featurette-divider">
 
       <div class="row featurette justify-content-center align-items-center">
-        <div class="col-6 col-md-6 order-2 container-main">
+        <div class="col-6 col-md-6 order-lg-1 order-md-2 order-2 container-main">
           <h3 class="title-project">Fatal Journeys</h3>
           <hr class="hr-sm" />
           <p>
@@ -493,7 +634,7 @@
               role="button"><i class="bi bi-geo-fill"></i>&nbsp;View web app »</a>
           </p>
         </div>
-        <div class="col-5 col-md-5 order-1 justify-content-center align-items-center img-container">
+        <div class="col-5 col-md-5 order-lg-2 order-1 justify-content-center align-items-center img-container">
           <div class="img-hover-zoom img-hover-zoom--slowmo">
             <a target="_blank" href="https://efano.github.io/global-migrant-deaths/"><img
                 class="img-circle img-responsive" src="./images/migrant-deathsT.png" alt="mapping migrant deaths"></a>
@@ -504,7 +645,7 @@
       <hr class="featurette-divider">
 
       <div class="row featurette justify-content-center align-items-center">
-        <div class="col-6 col-md-6 order-lg-1 order-md-2 order-2 container-main">
+        <div class="col-6 col-md-6 order-2 container-main">
           <h3 class="title-project">Coastal Vulnerability</h3>
           <hr class="hr-sm" />
           <p>This web map visualizes the relative susceptibility of coastal beaches to sea-level rise through the
@@ -530,7 +671,7 @@
               role="button"><i class="bi bi-geo-fill"></i>&nbsp;View web app »</a>
           </p>
         </div>
-        <div class="col-5 col-md-5 order-lg-2 order-1 justify-content-center align-items-center img-container">
+        <div class="col-5 col-md-5 order-1 justify-content-center align-items-center img-container">
           <div class="img-hover-zoom img-hover-zoom--slowmo">
             <a target="_blank" href="https://efano.github.io/coastal-vulnerability/"><img
                 class="img-circle img-responsive" src="./images/beachesT.png" alt="coastal vulnerability"></a>
@@ -541,7 +682,7 @@
       <hr class="featurette-divider">
 
       <div class="row featurette justify-content-center align-items-center">
-        <div class="col-6 col-md-6 order-2 container-main">
+        <div class="col-6 col-md-6 order-lg-1 order-md-2 order-2 container-main">
           <h3 class="title-project">Invasive Flora Species</h3>
           <hr class="hr-sm" />
           <p>Node.js is an open-source, JavaScript framework that executes JavaScript code outside of a browser.
@@ -564,7 +705,7 @@
               role="button"><i class="bi bi-geo-fill"></i>&nbsp;View web app »</a>
           </p>
         </div>
-        <div class="col-5 col-md-5 order-1 img-container justify-content-center align-items-center">
+        <div class="col-5 col-md-5 order-lg-2 order-1 img-container justify-content-center align-items-center">
           <div class="img-hover-zoom img-hover-zoom--slowmo">
             <a target="_blank" href="https://efano.github.io/invasive-water-buttercup/"><img
                 class="img-circle img-responsive" src="./images/NZ-invasiveT.png" alt="invasive flora species"></a>
@@ -575,7 +716,7 @@
       <hr class="featurette-divider">
 
       <div class="row featurette justify-content-center align-items-center">
-        <div class="col-6 col-md-6 order-lg-1 order-md-2 order-2 container-main">
+        <div class="col-6 col-md-6 order-2 container-main">
           <h3 class="title-project">U.S. Power Plants</h3>
           <hr class="hr-sm" />
           <p>This interactive bivariate web map displays nuclear, hydroelectric, and solar power plants within the
@@ -595,7 +736,7 @@
               role="button"><i class="bi bi-geo-fill"></i>&nbsp;View web app »</a>
           </p>
         </div>
-        <div class="col-5 col-md-5 order-lg-2 order-1 justify-content-center align-items-center img-container">
+        <div class="col-5 col-md-5 order-1 justify-content-center align-items-center img-container">
           <div class="img-hover-zoom img-hover-zoom--slowmo">
             <a target="_blank" href="https://efano.github.io/bi-variate-prop/"><img
                 class="img-circle img-responsive img-center" src="./images/PwrPlantsT.png"></a>
@@ -606,7 +747,7 @@
       <hr class="featurette-divider">
 
       <div class="row featurette justify-content-center align-items-center">
-        <div class="col-6 col-md-6 order-2 container-main">
+        <div class="col-6 col-md-6 order-lg-1 order-md-2 order-2 container-main">
           <h3 class="title-project">Statistical Harvest Data</h3>
           <hr class="hr-sm" />
           <p>The <a target="_blank" href="http://www.iphc.int/">International Pacific Halibut Commission</a>
@@ -625,7 +766,7 @@
             </button>
           </p>
         </div>
-        <div class="col-5 col-md-5 order-1 justify-content-center align-items-center img-container">
+        <div class="col-5 col-md-5 order-lg-2 order-1 justify-content-center align-items-center img-container">
           <div class="img-hover-zoom img-hover-zoom--slowmo">
             <a data-bs-toggle="modal" data-bs-target="#IPHC_Web"><img class="img-circle img-responsive img-center"
                 src="./images/IPHC_T.png"></a>
@@ -636,7 +777,7 @@
       <hr class="featurette-divider">
 
       <div class="row featurette justify-content-center align-items-center">
-        <div class="col-6 col-md-6 order-lg-1 order-md-2 order-2 container-main">
+        <div class="col-6 col-md-6 order-2 container-main">
           <h3 class="title-project">Real-time Visitor Weather App</h3>
           <hr class="hr-sm" />
           <p>This live, interactive weather application was designed for the Visitor Information Stations
@@ -655,7 +796,7 @@
             </button>
           </p>
         </div>
-        <div class="col-5 col-md-5 order-lg-2 order-1 justify-content-center align-items-center img-container">
+        <div class="col-5 col-md-5 order-1 justify-content-center align-items-center img-container">
           <div class="img-hover-zoom img-hover-zoom--slowmo">
             <a data-bs-toggle="modal" data-bs-target="#GSENM_wx"><img class="img-circle img-responsive"
                 src="./images/GSENM_wx_T.png"></a>
